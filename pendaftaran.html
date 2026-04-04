@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Formulir Pendaftaran - Pondok Pesantren & SMK Miftahul Huda Kalanganyar Lamongan</title>
+<meta name="description" content="Daftar sekarang di Pondok Pesantren Miftahul Huda Kalanganyar atau SMK Miftahul Huda. Pendaftaran online mudah untuk tahun ajaran baru. Tersedia program Tahfidz, Bahasa Arab, Bahasa Inggris, dan SMK.">
+<meta name="keywords" content="pendaftaran pondok pesantren miftahul huda, daftar pesantren lamongan, daftar smk miftahul huda, ppdb pesantren kalanganyar, formulir pendaftaran santri">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ppmiftahulhuda-kalanganyar.id/pendaftaran.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pendaftaran Online - PP & SMK Miftahul Huda Kalanganyar">
+<meta property="og:description" content="Daftar online Pondok Pesantren atau SMK Miftahul Huda Kalanganyar Lamongan. Formulir mudah dan cepat.">
+<meta property="og:url" content="https://ppmiftahulhuda-kalanganyar.id/pendaftaran.html">
+<meta property="og:image" content="https://ppmiftahulhuda-kalanganyar.id/assets/images/background.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/images/logo-pondok.png">
+<meta name="theme-color" content="#1B6B3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Pendaftaran PP & SMK Miftahul Huda Kalanganyar","description":"Formulir pendaftaran online Pondok Pesantren dan SMK Miftahul Huda Kalanganyar Lamongan","url":"https://ppmiftahulhuda-kalanganyar.id/pendaftaran.html","isPartOf":{"@type":"WebSite","name":"PP Miftahul Huda Kalanganyar","url":"https://ppmiftahulhuda-kalanganyar.id/"}}
+</script>
+<style>
+/* ===== Landing Page Pendaftaran ===== */
+:root {
+  --daftar-pondok: #1b6b3a;
+  --daftar-smk: #1a3a6b;
+  --daftar-pondok-light: #eaf5ee;
+  --daftar-smk-light: #eaf0f8;
+}
+
+/* Hero */
+.daftar-hero {
+  background: linear-gradient(135deg, #0e4422 0%, #1b6b3a 40%, #1a3a6b 100%);
+  color: #fff;
+  padding: 7rem 0 5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.daftar-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('assets/images/background.webp') center/cover;
+  opacity: 0.08;
+}
+.daftar-hero .container { position: relative; z-index: 2; }
+.daftar-hero .arabic-title {
+  font-family: 'Amiri', serif;
+  font-size: 2.5rem;
+  color: #d4a843;
+  margin-bottom: 0.5rem;
+}
+.daftar-hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+.daftar-hero p {
+  font-size: 1rem;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+.hero-badges {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+}
+
+/* Tab Selector */
+.daftar-selector {
+  background: #fff;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 64px;
+  z-index: 100;
+}
+.daftar-tabs {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.daftar-tab-btn {
+  flex: 1;
+  padding: 1.25rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #6b7280;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+.daftar-tab-btn.active-pondok {
+  color: var(--daftar-pondok);
+  border-bottom-color: var(--daftar-pondok);
+  background: #f6fdf9;
+}
+.daftar-tab-btn.active-smk {
+  color: var(--daftar-smk);
+  border-bottom-color: var(--daftar-smk);
+  background: #f0f4fc;
+}
+.daftar-tab-btn .tab-icon {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  background: var(--light-alt);
+  transition: all 0.3s;
+}
+.daftar-tab-btn.active-pondok .tab-icon { background: rgba(27,107,58,0.12); }
+.daftar-tab-btn.active-smk .tab-icon { background: rgba(26,58,107,0.12); }
+
+/* Form Panels */
+.daftar-panel { display: none; padding: 3rem 0 5rem; }
+.daftar-panel.active { display: block; }
+.panel-pondok { background: linear-gradient(180deg, #f6fdf9 0%, #fff 100%); }
+.panel-smk { background: linear-gradient(180deg, #f0f4fc 0%, #fff 100%); }
+
+.daftar-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 3rem;
+  align-items: start;
+}
+/* Info Side */
+.daftar-info-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 130px;
+}
+.daftar-info-header {
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.panel-pondok .daftar-info-header { background: linear-gradient(135deg, #1b6b3a, #0e4422); }
+.panel-smk .daftar-info-header { background: linear-gradient(135deg, #1a3a6b, #0d2040); }
+.daftar-info-header .logo-wrap img {
+  width: 70px; height: 70px;
+  border-radius: 50%;
+  border: 3px solid rgba(212,168,67,0.7);
+  margin: 0 auto 1rem;
+  object-fit: cover;
+}
+.daftar-info-header h2 { font-size: 1.2rem; margin-bottom: 0.25rem; }
+.daftar-info-header p { font-size: 0.8rem; opacity: 0.75; }
+.daftar-info-body { padding: 1.5rem; }
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.88rem;
+  color: #444;
+}
+.info-item:last-child { border-bottom: none; }
+.info-item .icon {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+}
+.panel-pondok .info-item .icon { background: #eaf5ee; }
+.panel-smk .info-item .icon { background: #eaf0f8; }
+.info-item strong { display: block; font-size: 0.8rem; margin-bottom: 0.15rem; }
+.info-hotline {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.panel-pondok .info-hotline { background: #eaf5ee; }
+.panel-smk .info-hotline { background: #eaf0f8; }
+.info-hotline a {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+  text-decoration: none;
+}
+.panel-pondok .info-hotline a { color: var(--daftar-pondok); }
+.panel-smk .info-hotline a { color: var(--daftar-smk); }
+
+/* Form Card */
+.daftar-form-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+.form-card-header {
+  padding: 1.75rem 2rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.panel-pondok .form-card-header { border-top: 4px solid var(--daftar-pondok); }
+.panel-smk .form-card-header { border-top: 4px solid var(--daftar-smk); }
+.form-card-header h3 { font-size: 1.15rem; margin-bottom: 0.2rem; }
+.panel-pondok .form-card-header h3 { color: var(--daftar-pondok); }
+.panel-smk .form-card-header h3 { color: var(--daftar-smk); }
+.form-card-header p { font-size: 0.83rem; color: #888; }
+.form-body { padding: 2rem; }
+
+/* Fields */
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+.field-group { margin-bottom: 1rem; }
+.field-group label {
+  display: block;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 0.4rem;
+}
+.field-group label span { color: #e74c3c; margin-left: 2px; }
+.field-group input,
+.field-group select,
+.field-group textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.25s, box-shadow 0.25s;
+  background: #fafafa;
+}
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+  background: #fff;
+  border-color: var(--daftar-pondok);
+  box-shadow: 0 0 0 3px rgba(27,107,58,0.1);
+}
+.panel-smk .field-group input:focus,
+.panel-smk .field-group select:focus,
+.panel-smk .field-group textarea:focus {
+  border-color: var(--daftar-smk);
+  box-shadow: 0 0 0 3px rgba(26,58,107,0.1);
+}
+.field-group textarea { resize: vertical; min-height: 100px; }
+.field-section-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0 1rem;
+  border-bottom: 2px solid #f0f0f0;
+  color: #999;
+}
+.panel-pondok .field-section-title { color: var(--daftar-pondok); border-color: rgba(27,107,58,0.15);}
+.panel-smk .field-section-title { color: var(--daftar-smk); border-color: rgba(26,58,107,0.15);}
+
+/* Submit */
+.form-submit-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all 0.3s;
+  margin-top: 1.5rem;
+}
+.panel-pondok .form-submit-btn {
+  background: linear-gradient(135deg, #1b6b3a, #28894d);
+  box-shadow: 0 4px 16px rgba(27,107,58,0.3);
+}
+.panel-smk .form-submit-btn {
+  background: linear-gradient(135deg, #1a3a6b, #2554a0);
+  box-shadow: 0 4px 16px rgba(26,58,107,0.3);
+}
+.form-submit-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+/* Success message */
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+}
+.form-success .success-icon {
+  width: 70px; height: 70px;
+  background: #eaf5ee;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.25rem;
+  font-size: 2rem;
+}
+.form-success h4 { font-size: 1.2rem; color: #1b6b3a; margin-bottom: 0.5rem; }
+.form-success p { color: #666; font-size: 0.88rem; }
+
+/* Note */
+.form-note {
+  background: #fffbf0;
+  border: 1px solid #f0d990;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  font-size: 0.8rem;
+  color: #7a5c00;
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* CTA Bottom */
+.daftar-cta-bottom {
+  background: linear-gradient(135deg, #0e4422, #1b6b3a);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+.daftar-cta-bottom h3 { font-size: 1.6rem; margin-bottom: 0.75rem; }
+.daftar-cta-bottom p { opacity: 0.8; max-width: 500px; margin: 0 auto 2rem; font-size: 0.95rem; }
+.cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.cta-btn-white {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  background: #fff; color: #1b6b3a;
+  padding: 0.85rem 2rem;
+  border-radius: 8px; font-weight: 700; font-size: 0.95rem;
+  text-decoration: none; transition: all 0.3s;
+}
+.cta-btn-white:hover { background: #f0f0f0; transform: translateY(-2px); }
+.cta-btn-outline-white {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  border: 2px solid rgba(255,255,255,0.6); color: #fff;
+  padding: 0.85rem 2rem;
+  border-radius: 8px; font-weight: 600; font-size: 0.95rem;
+  text-decoration: none; transition: all 0.3s;
+}
+.cta-btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+
+@media (max-width: 900px) {
+  .daftar-layout { grid-template-columns: 1fr; }
+  .daftar-info-card { position: static; }
+  .field-row { grid-template-columns: 1fr; }
+  .daftar-hero { padding: 6rem 0 3rem; }
+}
+@media (max-width: 600px) {
+  .daftar-tabs { flex-direction: column; }
+  .daftar-tab-btn { border-bottom: none; border-left: 3px solid transparent; justify-content: flex-start; }
+  .daftar-tab-btn.active-pondok { border-left-color: var(--daftar-pondok); border-bottom: none; }
+  .daftar-tab-btn.active-smk { border-left-color: var(--daftar-smk); border-bottom: none; }
+}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Langsung ke Konten</a>
+
+<!-- Navbar -->
+<nav class="navbar" aria-label="Navigasi Utama">
+<div class="container">
+<a href="index.html" class="nav-brand" aria-label="Beranda PP Miftahul Huda">
+<img src="assets/images/logo-pondok.png" alt="Logo PP Miftahul Huda" width="45" height="45" loading="eager">
+<div class="nav-brand-text"><h1>PP Miftahul Huda</h1><span>Kalanganyar - Lamongan</span></div>
+</a>
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="nav-menu" id="navMenu">
+<a href="index.html">Beranda</a>
+<a href="profil.html">Profil</a>
+<a href="index.html#programs">Program</a>
+<a href="sholawat.html">Sholawat</a>
+<a href="alumni.html">Alumni</a>
+<a href="index.html#contact">Kontak</a>
+<a href="pendaftaran.html" class="nav-cta active">Daftar Sekarang</a>
+</div>
+<button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+</div>
+</nav>
+
+<!-- Hero -->
+<header class="daftar-hero" id="home">
+<div class="container">
+<div class="arabic-title">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+<h1>Pendaftaran Santri Baru<br>PP & SMK Miftahul Huda</h1>
+<p>Daftarkan putra-putri Anda dan wujudkan masa depan yang gemilang dengan pondasi iman, ilmu, dan akhlak mulia bersama Miftahul Huda Kalanganyar.</p>
+<div class="hero-badges">
+<span class="hero-badge">✅ Formulir Online Mudah</span>
+<span class="hero-badge">🕌 Pondok Pesantren</span>
+<span class="hero-badge">🏫 SMK Miftahul Huda</span>
+<span class="hero-badge">📍 Kalanganyar, Lamongan</span>
+</div>
+</div>
+</header>
+
+<!-- Tab Selector -->
+<div class="daftar-selector" id="main">
+<div class="daftar-tabs" role="tablist">
+<button class="daftar-tab-btn active-pondok" id="tabPondok" role="tab" aria-selected="true" aria-controls="panelPondok" onclick="switchTab('pondok')">
+<div class="tab-icon">🕌</div>
+<div>
+<div>Pondok Pesantren</div>
+<small style="font-weight:400;font-size:.75rem;color:#888">Tahfidz, Bahasa Arab & Inggris</small>
+</div>
+</button>
+<button class="daftar-tab-btn" id="tabSmk" role="tab" aria-selected="false" aria-controls="panelSmk" onclick="switchTab('smk')">
+<div class="tab-icon">🏫</div>
+<div>
+<div>SMK Miftahul Huda</div>
+<small style="font-weight:400;font-size:.75rem;color:#888">Pendidikan Kejuruan Berbasis Pesantren</small>
+</div>
+</button>
+</div>
+</div>
+
+<!-- ========== PANEL PONDOK ========== -->
+<div class="daftar-panel panel-pondok active" id="panelPondok" role="tabpanel">
+<div class="container">
+<div class="daftar-layout">
+<!-- Info -->
+<aside class="daftar-info-card">
+<div class="daftar-info-header">
+<div class="logo-wrap"><img src="assets/images/logo-pondok.png" alt="Logo PP Miftahul Huda" loading="lazy"></div>
+<h2>Pondok Pesantren Miftahul Huda</h2>
+<p>Kalanganyar, Karanggeneng, Lamongan</p>
+</div>
+<div class="daftar-info-body">
+<div class="info-item"><div class="icon">📚</div><div><strong>Program Tersedia</strong>Tahfidz Al-Quran, Bahasa Arab, Bahasa Inggris, Madrasah Diniyah</div></div>
+<div class="info-item"><div class="icon">🏫</div><div><strong>Jenjang Pendidikan</strong>MI, MTs, MA (Terintegrasi)</div></div>
+<div class="info-item"><div class="icon">👦👧</div><div><strong>Asrama</strong>Putra & Putri Terpisah dengan pengawasan 24 jam</div></div>
+<div class="info-item"><div class="icon">📅</div><div><strong>Pendaftaran</strong>Setiap tahun ajaran baru (Januari – Juni)</div></div>
+<div class="info-item"><div class="icon">📍</div><div><strong>Alamat</strong>Jl. KH. Zayadi RT.04 RW.01 Kalanganyar, Karanggeneng, Lamongan</div></div>
+<div class="info-hotline">
+<span>Informasi & Pendaftaran</span>
+<a href="https://wa.me/6285704735274" target="_blank" rel="noopener">+62 857-0473-5274</a>
+</div>
+</div>
+</aside>
+<!-- Form -->
+<div class="daftar-form-card" id="pondok">
+<div class="form-card-header">
+<h3>Formulir Pendaftaran Santri</h3>
+<p>Isi data dengan lengkap dan benar. Data akan langsung tersimpan ke sistem kami.</p>
+</div>
+<div class="form-body">
+<form id="formPondok" novalidate>
+<div class="field-section-title">Data Calon Santri</div>
+<div class="field-group">
+<label for="p_nama">Nama Lengkap Calon Santri <span>*</span></label>
+<input type="text" id="p_nama" name="nama" placeholder="Nama sesuai akta kelahiran" required>
+</div>
+<div class="field-row">
+<div class="field-group">
+<label for="p_ttl_kota">Tempat Lahir <span>*</span></label>
+<input type="text" id="p_ttl_kota" name="tempat_lahir" placeholder="Kota" required>
+</div>
+<div class="field-group">
+<label for="p_ttl_tanggal">Tanggal Lahir <span>*</span></label>
+<input type="date" id="p_ttl_tanggal" name="tgl_lahir" required>
+</div>
+</div>
+<div class="field-row">
+<div class="field-group">
+<label for="p_jk">Jenis Kelamin <span>*</span></label>
+<select id="p_jk" name="jenis_kelamin" required>
+<option value="">Pilih</option>
+<option value="Laki-laki">Laki-laki</option>
+<option value="Perempuan">Perempuan</option>
+</select>
+</div>
+<div class="field-group">
+<label for="p_asal">Asal Sekolah / Jenjang</label>
+<input type="text" id="p_asal" name="asal_sekolah" placeholder="SD, MI, SMP, MTs, dll">
+</div>
+</div>
+<div class="field-section-title">Data Orang Tua / Wali</div>
+<div class="field-group">
+<label for="p_ortu">Nama Orang Tua / Wali <span>*</span></label>
+<input type="text" id="p_ortu" name="nama_ortu" placeholder="Nama Ayah / Ibu / Wali" required>
+</div>
+<div class="field-row">
+<div class="field-group">
+<label for="p_hp">No. WhatsApp Aktif <span>*</span></label>
+<input type="tel" id="p_hp" name="no_wa" placeholder="08xxxxxxxxxx" required>
+</div>
+<div class="field-group">
+<label for="p_email">Email (Opsional)</label>
+<input type="email" id="p_email" name="email" placeholder="email@contoh.com">
+</div>
+</div>
+<div class="field-group">
+<label for="p_alamat">Alamat Lengkap <span>*</span></label>
+<textarea id="p_alamat" name="alamat" placeholder="Jalan, RT/RW, Desa, Kecamatan, Kabupaten, Provinsi" required></textarea>
+</div>
+<div class="field-section-title">Pilihan Program & Sistem</div>
+<div class="field-row">
+<div class="field-group">
+<label for="p_program">Program Yang Diminati <span>*</span></label>
+<select id="p_program" name="program" required>
+<option value="">Pilih Program</option>
+<option value="Tahfidz Al-Quran">Tahfidz Al-Quran</option>
+<option value="Bahasa Arab Intensif">Bahasa Arab Intensif</option>
+<option value="Bahasa Inggris">Bahasa Inggris</option>
+<option value="Madrasah Diniyah">Madrasah Diniyah</option>
+<option value="Kombinasi (Tahfidz + Bahasa)">Kombinasi (Tahfidz + Bahasa)</option>
+</select>
+</div>
+<div class="field-group">
+<label for="p_sistem">Sistem Pendaftaran <span>*</span></label>
+<select id="p_sistem" name="sistem_pendaftaran" required>
+<option value="">Pilih Sistem</option>
+<option value="Mandiri">Mandiri</option>
+<option value="Beasiswa Prestasi">Beasiswa Prestasi</option>
+<option value="Beasiswa Yatim/Piatu">Beasiswa Yatim/Piatu</option>
+<option value="Beasiswa Fakir/Miskin">Beasiswa Fakir/Miskin</option>
+</select>
+</div>
+</div>
+<div class="field-section-title">Lampiran Dokumen</div>
+<div class="field-row">
+<div class="field-group">
+<label for="p_foto">Pas Foto 3x4 <span>*</span></label>
+<input type="file" id="p_foto" name="foto_3x4" accept="image/*" required style="padding:0.5rem">
+<small style="color:#888;font-size:0.75rem">Format: JPG/PNG, maks 2MB</small>
+</div>
+<div class="field-group">
+<label for="p_kk">Fotocopy Kartu Keluarga <span>*</span></label>
+<input type="file" id="p_kk" name="fotocopy_kk" accept="image/*,.pdf" required style="padding:0.5rem">
+<small style="color:#888;font-size:0.75rem">Format: JPG/PNG/PDF, maks 2MB</small>
+</div>
+</div>
+<div class="field-group">
+<label for="p_pesan">Pesan / Pertanyaan (Opsional)</label>
+<textarea id="p_pesan" name="pesan" placeholder="Tulis pertanyaan atau informasi tambahan..."></textarea>
+</div>
+<div class="form-note">
+ℹ️ Data Anda akan tersimpan ke Google Sheets kami dan tim pendaftaran akan menghubungi Anda via WhatsApp dalam 1×24 jam.
+</div>
+<button type="submit" class="form-submit-btn" id="submitPondok">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+Kirim Formulir Pendaftaran
+</button>
+</form>
+<div class="form-success" id="successPondok">
+<div class="success-icon">✅</div>
+<h4>Formulir Berhasil Dikirim!</h4>
+<p>Terima kasih telah mendaftar. Tim kami akan menghubungi Anda via WhatsApp dalam 1×24 jam kerja.</p>
+<a href="index.html" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex">Kembali ke Beranda</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ========== PANEL SMK ========== -->
+<div class="daftar-panel panel-smk" id="panelSmk" role="tabpanel">
+<div class="container">
+<div class="daftar-layout">
+<!-- Info -->
+<aside class="daftar-info-card">
+<div class="daftar-info-header">
+<div class="logo-wrap"><img src="assets/images/logo-pondok.png" alt="Logo SMK Miftahul Huda" loading="lazy"></div>
+<h2>SMK Miftahul Huda Kalanganyar</h2>
+<p>Pendidikan Kejuruan Berbasis Nilai Pesantren</p>
+</div>
+<div class="daftar-info-body">
+<div class="info-item"><div class="icon">🎓</div><div><strong>Jenjang</strong>Sekolah Menengah Kejuruan (SMK) — setara SMA</div></div>
+<div class="info-item"><div class="icon">📖</div><div><strong>Keunggulan</strong>Kurikulum terpadu antara kejuruan dan nilai islami pesantren</div></div>
+<div class="info-item"><div class="icon">🏡</div><div><strong>Asrama</strong>Tersedia asrama bagi santri yang ingin mondok</div></div>
+<div class="info-item"><div class="icon">📅</div><div><strong>PPDB</strong>Pendaftaran Peserta Didik Baru dibuka setiap tahun</div></div>
+<div class="info-item"><div class="icon">📍</div><div><strong>Alamat</strong>Jl. KH. Zayadi RT.04 RW.01 Kalanganyar, Karanggeneng, Lamongan</div></div>
+<div class="info-hotline">
+<span>Info PPDB SMK</span>
+<a href="https://wa.me/6285704735274" target="_blank" rel="noopener">+62 857-0473-5274</a>
+</div>
+</div>
+</aside>
+<!-- Form -->
+<div class="daftar-form-card" id="smk">
+<div class="form-card-header">
+<h3>Formulir Pendaftaran SMK</h3>
+<p>Lengkapi data berikut untuk mendaftar sebagai peserta didik baru SMK Miftahul Huda.</p>
+</div>
+<div class="form-body">
+<form id="formSmk" novalidate>
+<div class="field-section-title">Data Calon Siswa</div>
+<div class="field-group">
+<label for="s_nama">Nama Lengkap Calon Siswa <span>*</span></label>
+<input type="text" id="s_nama" name="nama" placeholder="Nama sesuai ijazah / akta lahir" required>
+</div>
+<div class="field-row">
+<div class="field-group">
+<label for="s_ttl_kota">Tempat Lahir <span>*</span></label>
+<input type="text" id="s_ttl_kota" name="tempat_lahir" placeholder="Kota" required>
+</div>
+<div class="field-group">
+<label for="s_ttl_tgl">Tanggal Lahir <span>*</span></label>
+<input type="date" id="s_ttl_tgl" name="tgl_lahir" required>
+</div>
+</div>
+<div class="field-row">
+<div class="field-group">
+<label for="s_jk">Jenis Kelamin <span>*</span></label>
+<select id="s_jk" name="jenis_kelamin" required>
+<option value="">Pilih</option>
+<option value="Laki-laki">Laki-laki</option>
+<option value="Perempuan">Perempuan</option>
+</select>
+</div>
+<div class="field-group">
+<label for="s_asal">Asal SMP/MTs <span>*</span></label>
+<input type="text" id="s_asal" name="asal_sekolah" placeholder="Nama sekolah asal" required>
+</div>
+</div>
+<div class="field-group">
+<label for="s_nisn">NISN (Opsional)</label>
+<input type="text" id="s_nisn" name="nisn" placeholder="Nomor Induk Siswa Nasional">
+</div>
+<div class="field-section-title">Data Orang Tua / Wali</div>
+<div class="field-group">
+<label for="s_ortu">Nama Orang Tua / Wali <span>*</span></label>
+<input type="text" id="s_ortu" name="nama_ortu" placeholder="Nama Ayah / Ibu / Wali" required>
+</div>
+<div class="field-row">
+<div class="field-group">
+<label for="s_hp">No. WhatsApp Aktif <span>*</span></label>
+<input type="tel" id="s_hp" name="no_wa" placeholder="08xxxxxxxxxx" required>
+</div>
+<div class="field-group">
+<label for="s_email">Email (Opsional)</label>
+<input type="email" id="s_email" name="email" placeholder="email@contoh.com">
+</div>
+</div>
+<div class="field-group">
+<label for="s_alamat">Alamat Lengkap <span>*</span></label>
+<textarea id="s_alamat" name="alamat" placeholder="Jalan, RT/RW, Desa, Kecamatan, Kabupaten, Provinsi" required></textarea>
+</div>
+<div class="field-section-title">Pilihan & Keterangan</div>
+<div class="field-row">
+<div class="field-group">
+<label for="s_mondok">Pilihan Asrama</label>
+<select id="s_mondok" name="pilihan_asrama">
+<option value="">Pilih</option>
+<option value="Mondok (tinggal di asrama)">Mondok (tinggal di asrama)</option>
+<option value="Tidak mondok (pulang pergi)">Tidak mondok (pulang pergi)</option>
+</select>
+</div>
+<div class="field-group">
+<label for="s_sistem">Sistem Pendaftaran <span>*</span></label>
+<select id="s_sistem" name="sistem_pendaftaran" required>
+<option value="">Pilih Sistem</option>
+<option value="Mandiri">Mandiri</option>
+<option value="Beasiswa Prestasi">Beasiswa Prestasi</option>
+<option value="Beasiswa Yatim/Piatu">Beasiswa Yatim/Piatu</option>
+<option value="Beasiswa Fakir/Miskin">Beasiswa Fakir/Miskin</option>
+</select>
+</div>
+</div>
+<div class="field-section-title">Lampiran Dokumen</div>
+<div class="field-row">
+<div class="field-group">
+<label for="s_foto">Pas Foto 3x4 <span>*</span></label>
+<input type="file" id="s_foto" name="foto_3x4" accept="image/*" required style="padding:0.5rem">
+<small style="color:#888;font-size:0.75rem">Format: JPG/PNG, maks 2MB</small>
+</div>
+<div class="field-group">
+<label for="s_kk">Fotocopy Kartu Keluarga <span>*</span></label>
+<input type="file" id="s_kk" name="fotocopy_kk" accept="image/*,.pdf" required style="padding:0.5rem">
+<small style="color:#888;font-size:0.75rem">Format: JPG/PNG/PDF, maks 2MB</small>
+</div>
+</div>
+<div class="field-group">
+<label for="s_pesan">Pesan / Pertanyaan (Opsional)</label>
+<textarea id="s_pesan" name="pesan" placeholder="Tulis pertanyaan atau informasi tambahan..."></textarea>
+</div>
+<div class="form-note">
+ℹ️ Data Anda akan tersimpan ke Google Sheets kami dan tim PPDB akan menghubungi Anda via WhatsApp dalam 1×24 jam.
+</div>
+<button type="submit" class="form-submit-btn" id="submitSmk">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+Kirim Formulir Pendaftaran SMK
+</button>
+</form>
+<div class="form-success" id="successSmk">
+<div class="success-icon">✅</div>
+<h4>Formulir SMK Berhasil Dikirim!</h4>
+<p>Terima kasih telah mendaftar ke SMK Miftahul Huda. Tim PPDB akan menghubungi Anda dalam 1×24 jam.</p>
+<a href="index.html" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex">Kembali ke Beranda</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- CTA Bottom -->
+<div class="daftar-cta-bottom">
+<div class="container">
+<h3>Masih Ada Pertanyaan?</h3>
+<p>Hubungi tim kami langsung via WhatsApp untuk konsultasi gratis seputar pendaftaran</p>
+<div class="cta-btns">
+<a href="https://wa.me/6285704735274?text=Assalamu'alaikum%2C%20saya%20ingin%20bertanya%20tentang%20pendaftaran%20PP%20Miftahul%20Huda%20Kalanganyar" target="_blank" rel="noopener" class="cta-btn-white">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.556-1.472A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+Chat WhatsApp Sekarang
+</a>
+<a href="index.html" class="cta-btn-outline-white">← Kembali ke Website</a>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-bottom" style="border:none;padding:1.5rem 0;text-align:center">
+<p><div class="footer-sholawat" style="font-family:'Amiri',serif;font-size:1.25rem;color:#d4a843;margin-bottom:0.6rem;letter-spacing:0.5px;direction:rtl;">
+صَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ
+</div>
+<p style="margin:0 0 0.3rem;">© 2026 Pondok Pesantren Miftahul Huda Kalanganyar. Semua Hak Dilindungi.</p>
+<p style="font-size:0.78rem;color:#aaa;margin:0;">Dibuat dengan <span style="color:#e74c3c;">♥</span> oleh <strong style="color:#d4a843;">Fatah</strong> &nbsp;·&nbsp; <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none;">Lisensi MIT</a></p></p>
+</div>
+</div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/6285704735274?text=Assalamu'alaikum%2C%20saya%20ingin%20informasi%20pendaftaran%20PP%20Miftahul%20Huda" class="wa-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.556-1.472A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+<span>Chat WhatsApp</span>
+</a>
+<button class="scroll-top" id="scrollTop" aria-label="Kembali ke atas">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script>
+// ===== Google Apps Script URL =====
+// PETUNJUK: Ganti URL di bawah dengan URL deployment Google Apps Script Anda
+// Cara: buka https://script.google.com → buat proyek baru → salin kode dari README → Deploy → Web App
+const APPS_SCRIPT_URL_PONDOK = 'https://script.google.com/macros/s/AKfycbw0m6QMRClbLB9BuQQwrqJOb3Xnk6zvwEKr5S1V7ST2YA-W9wBpocFBJ3LGoWFnwcl78g/exec';
+const APPS_SCRIPT_URL_SMK    = 'https://script.google.com/macros/s/GANTI_DENGAN_URL_SMK/exec';
+
+// ===== Tab Switch =====
+function switchTab(type) {
+  const tabPondok = document.getElementById('tabPondok');
+  const tabSmk = document.getElementById('tabSmk');
+  const panelPondok = document.getElementById('panelPondok');
+  const panelSmk = document.getElementById('panelSmk');
+  if (type === 'pondok') {
+    tabPondok.className = 'daftar-tab-btn active-pondok';
+    tabSmk.className = 'daftar-tab-btn';
+    tabPondok.setAttribute('aria-selected','true');
+    tabSmk.setAttribute('aria-selected','false');
+    panelPondok.classList.add('active');
+    panelSmk.classList.remove('active');
+  } else {
+    tabSmk.className = 'daftar-tab-btn active-smk';
+    tabPondok.className = 'daftar-tab-btn';
+    tabSmk.setAttribute('aria-selected','true');
+    tabPondok.setAttribute('aria-selected','false');
+    panelSmk.classList.add('active');
+    panelPondok.classList.remove('active');
+  }
+}
+
+// ===== Auto-tab from anchor =====
+window.addEventListener('load', () => {
+  if (location.hash === '#smk') switchTab('smk');
+});
+
+// ===== Form Submit Helper =====
+function submitForm(formId, scriptUrl, successId, btnId) {
+  const form = document.getElementById(formId);
+  const btn = document.getElementById(btnId);
+  const success = document.getElementById(successId);
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+
+    btn.disabled = true;
+    btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Mengirim data...';
+
+    const data = new FormData(form);
+    const obj = {};
+    data.forEach((v, k) => { if (typeof v === 'string') obj[k] = v; });
+    obj['timestamp'] = new Date().toLocaleString('id-ID');
+    obj['jalur'] = formId === 'formPondok' ? 'Pondok Pesantren' : 'SMK';
+
+    try {
+      // Coba kirim ke Google Apps Script
+      if (!scriptUrl.includes('GANTI_DENGAN')) {
+        await fetch(scriptUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(obj)
+        });
+      }
+      // Fallback: kirim via WhatsApp setelah submit
+      const wa = buildWhatsApp(obj);
+      form.style.display = 'none';
+      success.style.display = 'block';
+      // Buka WhatsApp konfirmasi
+      setTimeout(() => window.open(wa, '_blank'), 1500);
+    } catch(err) {
+      // Fallback langsung ke WhatsApp jika script gagal
+      window.open(buildWhatsApp(obj), '_blank');
+      form.style.display = 'none';
+      success.style.display = 'block';
+    }
+  });
+}
+
+function buildWhatsApp(d) {
+  const txt = encodeURIComponent(
+    `Assalamu'alaikum, saya ingin mendaftar di ${d.jalur} Miftahul Huda.\n\n` +
+    `*Nama:* ${d.nama||'-'}\n` +
+    `*TTL:* ${d.tempat_lahir||'-'}, ${d.tgl_lahir||'-'}\n` +
+    `*Jenis Kelamin:* ${d.jenis_kelamin||'-'}\n` +
+    `*Asal Sekolah:* ${d.asal_sekolah||'-'}\n` +
+    `*Nama Orang Tua:* ${d.nama_ortu||'-'}\n` +
+    `*No. WA:* ${d.no_wa||'-'}\n` +
+    `*Alamat:* ${d.alamat||'-'}\n` +
+    `*Program/Pilihan:* ${d.program||d.pilihan_asrama||'-'}\n` +
+    `*Sistem Pendaftaran:* ${d.sistem_pendaftaran||'-'}\n` +
+    `*Pesan:* ${d.pesan||'-'}\n\n` +
+    `📎 _Lampiran (Foto 3x4 & KK) akan saya kirimkan setelah chat ini._\n` +
+    `_Dikirim melalui formulir pendaftaran website PP Miftahul Huda_`
+  );
+  return `https://wa.me/6285704735274?text=${txt}`;
+}
+
+submitForm('formPondok', APPS_SCRIPT_URL_PONDOK, 'successPondok', 'submitPondok');
+submitForm('formSmk',    APPS_SCRIPT_URL_SMK,    'successSmk',    'submitSmk');
+
+// Nav toggle
+const navToggle=document.getElementById('navToggle'),navMenu=document.getElementById('navMenu'),navOverlay=document.getElementById('navOverlay');
+function toggleNav(){const o=navMenu.classList.toggle('open');navOverlay.classList.toggle('open');navToggle.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+navToggle.addEventListener('click',toggleNav);
+navOverlay.addEventListener('click',toggleNav);
+document.querySelectorAll('.nav-menu a').forEach(a=>a.addEventListener('click',()=>{if(navMenu.classList.contains('open'))toggleNav()}));
+
+// Scroll top
+const stb=document.getElementById('scrollTop');
+window.addEventListener('scroll',()=>stb.classList.toggle('visible',window.scrollY>300));
+stb.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>

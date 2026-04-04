@@ -1,0 +1,342 @@
+# Website Resmi PP Miftahul Huda Kalanganyar
+
+Website resmi Pondok Pesantren Miftahul Huda Kalanganyar, Karanggeneng, Lamongan.
+
+- **Domain:** https://ppmiftahulhuda-kalanganyar.id
+- **Kontak:** +62 857-0473-5274
+- **Developer:** Fatah (Lisensi MIT)
+
+---
+
+## Daftar Halaman Website
+
+### Halaman Utama
+
+| Halaman           | File                          | Keterangan                              |
+| ----------------- | ----------------------------- | --------------------------------------- |
+| Beranda           | `index.html`                  | Hero, profil, program, galeri, kontak   |
+| Profil            | `profil.html`                 | Sejarah, visi-misi, struktur organisasi |
+| Alumni            | `alumni.html`                 | Profil alumni berprestasi               |
+| Galeri            | `galeri.html`                 | Foto kegiatan dengan lightbox           |
+| **Pendaftaran ★** | `pendaftaran.html`            | Formulir Pondok & SMK → Google Sheets   |
+| Sholawat & Surat  | `sholawat.html`               | Sholawat, Surat Pilihan, Yasin & Tahlil |
+| Yasin & Tahlil    | `yasin-tahlil.html`           | Yasin 83 ayat, Tahlil, Doa lengkap      |
+| SMK               | `smk-miftahul-huda.html`      | Landing page SMK Miftahul Huda          |
+| Tahfidz           | `program-tahfidz.html`        | Program Tahfidzul Quran                 |
+| Bahasa Arab       | `program-bahasa-arab.html`    | Program Bahasa Arab Intensif            |
+| Bahasa Inggris    | `program-bahasa-inggris.html` | Program Bahasa Inggris                  |
+
+### Portal Berita (5 artikel)
+
+| File                                                 | Judul                                         |
+| ---------------------------------------------------- | --------------------------------------------- |
+| `berita/index.html`                                  | Portal daftar semua berita                    |
+| `berita/smk-miftahul-huda-resmi-dibuka.html`         | SMK Miftahul Huda Resmi Menerima Siswa Baru   |
+| `berita/wisuda-tahfidz-2025.html`                    | 24 Santri Hatam 30 Juz — Wisuda Tahfidz 2025  |
+| `berita/prestasi-olimpiade-bahasa-arab.html`         | Santri Raih Juara 1 Olimpiade Bahasa Arab     |
+| `berita/program-bahasa-inggris-kampung-inggris.html` | 3 Tutor dari Kampung Inggris Pare Bergabung   |
+| `berita/haul-pondok-2025.html`                       | Ribuan Jamaah Hadiri Haul & Isra' Mi'raj 2025 |
+
+### Portal Artikel (5 artikel)
+
+| File                                                     | Judul                                               |
+| -------------------------------------------------------- | --------------------------------------------------- |
+| `artikel/index.html`                                     | Portal daftar semua artikel                         |
+| `artikel/keutamaan-menghafal-quran.html`                 | 10 Keutamaan Menghafal Al-Quran                     |
+| `artikel/belajar-bahasa-arab-di-pesantren.html`          | Cara Efektif Belajar Bahasa Arab di Pesantren       |
+| `artikel/manfaat-mondok-bagi-generasi-muda.html`         | 7 Manfaat Mondok di Pesantren                       |
+| `artikel/tips-sukses-hafidz-quran.html`                  | Tips Sukses Menjadi Hafidz Quran di Usia Muda       |
+| `artikel/peran-pesantren-dalam-pendidikan-karakter.html` | Peran Strategis Pesantren dalam Pendidikan Karakter |
+
+### Portal Prestasi (5 artikel)
+
+| File                                               | Judul                                         |
+| -------------------------------------------------- | --------------------------------------------- |
+| `prestasi/index.html`                              | Portal daftar semua prestasi                  |
+| `prestasi/juara-mtq-lamongan.html`                 | Juara MTQ Kabupaten Lamongan 2025             |
+| `prestasi/alumni-diterima-universitas-negeri.html` | Alumni Diterima di Universitas Negeri Ternama |
+| `prestasi/lomba-kaligrafi-juara-1.html`            | Juara 1 Lomba Kaligrafi Al-Quran              |
+| `prestasi/santri-hafidz-30-juz.html`               | Hafidz 30 Juz di Usia 12 Tahun                |
+| `prestasi/lomba-pidato-bahasa-arab.html`           | Juara Pidato Bahasa Arab Antar-Pesantren      |
+
+### Portal Events (5 artikel)
+
+| File                                   | Judul                               |
+| -------------------------------------- | ----------------------------------- |
+| `events/index.html`                    | Portal daftar semua events          |
+| `events/ppdb-2025-2026.html`           | PPDB 2025/2026 Resmi Dibuka         |
+| `events/haul-dan-isra-miraj-2025.html` | Haul & Peringatan Isra' Mi'raj 2025 |
+| `events/wisuda-santri-2025.html`       | Wisuda Santri Angkatan 2025         |
+| `events/porseni-pesantren-2025.html`   | PORSENI Pesantren 2025              |
+| `events/rihlah-ilmiah-2025.html`       | Rihlah Ilmiah Santri 2025           |
+
+---
+
+## Struktur Folder
+
+```
+website-mifda/
+├── index.html
+├── profil.html
+├── alumni.html
+├── galeri.html
+├── pendaftaran.html            ★ Formulir → Google Sheets
+├── sholawat.html
+├── yasin-tahlil.html
+├── smk-miftahul-huda.html
+├── program-tahfidz.html
+├── program-bahasa-arab.html
+├── program-bahasa-inggris.html
+├── robots.txt
+├── sitemap.xml
+│
+├── berita/
+│   ├── index.html
+│   ├── smk-miftahul-huda-resmi-dibuka.html
+│   ├── wisuda-tahfidz-2025.html
+│   ├── prestasi-olimpiade-bahasa-arab.html
+│   ├── program-bahasa-inggris-kampung-inggris.html
+│   └── haul-pondok-2025.html
+│
+├── artikel/
+│   ├── index.html
+│   ├── keutamaan-menghafal-quran.html
+│   ├── belajar-bahasa-arab-di-pesantren.html
+│   ├── manfaat-mondok-bagi-generasi-muda.html
+│   ├── tips-sukses-hafidz-quran.html
+│   └── peran-pesantren-dalam-pendidikan-karakter.html
+│
+├── prestasi/
+│   ├── index.html
+│   ├── juara-mtq-lamongan.html
+│   ├── alumni-diterima-universitas-negeri.html
+│   ├── lomba-kaligrafi-juara-1.html
+│   ├── santri-hafidz-30-juz.html
+│   └── lomba-pidato-bahasa-arab.html
+│
+├── events/
+│   ├── index.html
+│   ├── ppdb-2025-2026.html
+│   ├── haul-dan-isra-miraj-2025.html
+│   ├── wisuda-santri-2025.html
+│   ├── porseni-pesantren-2025.html
+│   └── rihlah-ilmiah-2025.html
+│
+└── assets/
+    ├── css/style.css
+    ├── images/          (format WebP)
+    └── pdf/
+```
+
+---
+
+## 🔧 Integrasi Google Sheets (Formulir Pendaftaran)
+
+File `pendaftaran.html` mengirim data formulir ke Google Sheets via Google Apps Script.
+
+### Langkah 1 — Buat Google Spreadsheet
+
+1. Buka https://sheets.google.com → **+ Blank**
+2. Beri nama: `Pendaftaran PP Miftahul Huda`
+3. Di **Baris 1**, isi header kolom:
+
+```
+Timestamp | Jalur | Nama | Tempat Lahir | Tgl Lahir | Jenis Kelamin | Asal Sekolah | Nama Ortu | No WA | Email | Alamat | Program/Asrama | Sistem Pendaftaran | Pesan
+```
+
+4. Salin **ID Spreadsheet** dari URL:
+   `https://docs.google.com/spreadsheets/d/[ID_INI]/edit`
+
+### Langkah 2 — Buat Google Apps Script
+
+1. Buka https://script.google.com → **New Project**
+2. Beri nama: `Pendaftaran Miftahul Huda`
+3. Hapus semua isi, paste kode berikut:
+
+```javascript
+function doPost(e) {
+  try {
+    // ⬇️ GANTI dengan ID Spreadsheet Anda
+    var SPREADSHEET_ID = "GANTI_DENGAN_ID_SPREADSHEET_ANDA";
+
+    var sheet = SpreadsheetApp.openById(SPREADSHEET_ID).getActiveSheet();
+    var data = JSON.parse(e.postData.contents);
+
+    sheet.appendRow([
+      data.timestamp || new Date().toLocaleString("id-ID"),
+      data.jalur || "",
+      data.nama || "",
+      data.tempat_lahir || "",
+      data.tgl_lahir || "",
+      data.jenis_kelamin || "",
+      data.asal_sekolah || "",
+      data.nama_ortu || "",
+      data.no_wa || "",
+      data.email || "",
+      data.alamat || "",
+      data.program || data.pilihan_asrama || "",
+      data.sistem_pendaftaran || "",
+      data.pesan || "",
+    ]);
+
+    return ContentService.createTextOutput(
+      JSON.stringify({ result: "success" }),
+    ).setMimeType(ContentService.MimeType.JSON);
+  } catch (error) {
+    return ContentService.createTextOutput(
+      JSON.stringify({ result: "error", message: error.toString() }),
+    ).setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+function doGet(e) {
+  return ContentService.createTextOutput("OK - Endpoint aktif.").setMimeType(
+    ContentService.MimeType.TEXT,
+  );
+}
+```
+
+4. **Simpan** (Ctrl+S)
+
+### Langkah 3 — Deploy sebagai Web App
+
+1. **Deploy** → **New Deployment**
+2. Klik ikon ⚙️ → pilih **Web app**
+3. Isi:
+   - Execute as: **Me**
+   - Who has access: **Anyone**
+4. Klik **Deploy** → **Authorize access** → **Allow**
+5. **Salin URL** deployment (bentuk: `https://script.google.com/macros/s/AKfycb.../exec`)
+
+### Langkah 4 — Masukkan URL ke Website
+
+Buka `pendaftaran.html`, cari sekitar **baris 718–719**:
+
+```javascript
+const APPS_SCRIPT_URL_PONDOK =
+  "https://script.google.com/macros/s/GANTI.../exec";
+const APPS_SCRIPT_URL_SMK = "https://script.google.com/macros/s/GANTI.../exec";
+```
+
+Ganti keduanya dengan URL deployment dari Langkah 3.
+
+### ⚠️ Catatan Penting
+
+| Topik                  | Keterangan                                                                                                                |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Fallback**           | Jika URL belum diisi/mengandung kata `GANTI`, formulir otomatis redirect ke WhatsApp                                      |
+| **File Upload**        | Foto 3x4 & fotocopy KK tidak dikirim ke Sheets (tidak didukung). Pendaftar diminta kirim file via WhatsApp setelah submit |
+| **Update Script**      | Jika kode Apps Script diubah, buat **New Deployment** baru (jangan edit yang lama)                                        |
+| **Sistem Pendaftaran** | Field ini berisi: Mandiri / Beasiswa Prestasi / Beasiswa Yatim Piatu / Beasiswa Fakir Miskin                              |
+
+---
+
+## Fitur Formulir Pendaftaran
+
+Formulir di `pendaftaran.html` memiliki dua jalur (tab):
+
+### Tab Pondok Pesantren
+
+- Data santri: Nama, TTL, Jenis Kelamin, Asal Sekolah
+- Data orang tua: Nama, No. WA, Email, Alamat
+- Pilihan: Program (Tahfidz/Bahasa Arab/Inggris/Madrasah/Kombinasi)
+- **Sistem Pendaftaran:** Mandiri / Beasiswa Prestasi / Beasiswa Yatim-Piatu / Beasiswa Fakir-Miskin
+- **Lampiran:** Upload Foto 3x4 (JPG/PNG) + Upload Fotocopy KK (JPG/PNG/PDF)
+
+### Tab SMK Miftahul Huda
+
+- Data siswa: Nama, TTL, Jenis Kelamin, Asal SMP/MTs, NISN
+- Data orang tua: Nama, No. WA, Email, Alamat
+- Pilihan: Pilihan Asrama (Mondok / Pulang Pergi)
+- **Sistem Pendaftaran:** Mandiri / Beasiswa Prestasi / Beasiswa Yatim-Piatu / Beasiswa Fakir-Miskin
+- **Lampiran:** Upload Foto 3x4 + Upload Fotocopy KK
+
+---
+
+## SEO & Optimasi
+
+### Yang Sudah Diimplementasikan
+
+- ✅ Title tag unik & keyword-rich di setiap halaman
+- ✅ Meta description deskriptif (maks 160 karakter)
+- ✅ Heading hierarchy (H1 → H2 → H3) terstruktur
+- ✅ Schema.org: `EducationalOrganization`, `Article`, `BreadcrumbList`
+- ✅ OpenGraph & Twitter Card di semua halaman
+- ✅ `sitemap.xml` mencakup semua URL termasuk `pendaftaran.html`
+- ✅ `robots.txt` konfigurasi crawler
+- ✅ Canonical URL setiap halaman
+- ✅ Gambar WebP dengan `alt` deskriptif & lazy loading
+- ✅ Mobile-first responsive 100%
+- ✅ Breadcrumb navigasi di semua halaman artikel
+
+### Keyword Target
+
+- **Utama:** `pondok pesantren lamongan`, `pesantren miftahul huda`, `tahfidz lamongan`
+- **Lokal:** `pesantren kalanganyar`, `pesantren karanggeneng lamongan`
+- **Long-tail:** `daftar pondok pesantren tahfidz lamongan`, `smk berbasis pesantren lamongan`
+
+---
+
+## Footer (Semua Halaman)
+
+Semua halaman website memiliki footer seragam berisi:
+
+```
+صَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ
+
+© 2026 PP Miftahul Huda Kalanganyar. Semua Hak Dilindungi.
+Dibuat dengan ♥ oleh Fatah · Lisensi MIT
+```
+
+---
+
+## Social Media & Kontak
+
+| Platform  | Link                                       |
+| --------- | ------------------------------------------ |
+| WhatsApp  | https://wa.me/6285704735274                |
+| Instagram | @ponpesmifdakalanganyar                    |
+| Facebook  | https://www.facebook.com/share/1BZFmL1DrJ/ |
+| TikTok    | @ponpesmifdakalanganyar                    |
+| Website   | https://ppmiftahulhuda-kalanganyar.id      |
+
+**NAP (harus konsisten di semua platform):**
+
+- **Nama:** Pondok Pesantren Miftahul Huda Kalanganyar
+- **Alamat:** Jl. KH. Zayadi RT.04 RW.01, Kalanganyar, Karanggeneng, Lamongan 62254
+- **Telepon:** +62 857-0473-5274
+
+---
+
+## Cara Menambah Konten Baru
+
+### Berita / Artikel / Prestasi / Event Baru
+
+1. Buat file HTML baru di folder terkait (salin dari file artikel existing)
+2. Update: `<title>`, `<meta description>`, `<h2>`, konten artikel, tanggal, gambar
+3. Tambahkan kartu di halaman `index.html` folder terkait
+4. Tambahkan URL ke `sitemap.xml`
+
+### Foto Galeri Baru
+
+```bash
+# Kompres & konversi ke WebP
+convert foto.jpg -resize "800x800>" -quality 75 assets/images/namafile.webp
+```
+
+Tambahkan entry di `galeri.html`.
+
+---
+
+## Alumni Berprestasi
+
+| Nama                | Universitas               | Jurusan                   |
+| ------------------- | ------------------------- | ------------------------- |
+| M. Ridho Al-Mahbub  | Universitas Brawijaya     | Peternakan                |
+| M. Maslukh Alfanani | Universitas Negeri Malang | Pendidikan Bahasa Inggris |
+| Khasby Assidiq      | UPN Veteran Surabaya      | —                         |
+
+---
+
+_Terakhir diperbarui: 4 April 2026_
+_Developer: Fatah · Lisensi MIT_

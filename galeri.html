@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Galeri Foto Kegiatan | PP Miftahul Huda Kalanganyar Lamongan</title>
+<meta name="description" content="Galeri foto kegiatan Pondok Pesantren Miftahul Huda Kalanganyar Lamongan. Dokumentasi kegiatan tahfidz, belajar, wisuda, dan momen berharga santri pesantren.">
+<meta name="keywords" content="galeri foto pesantren, dokumentasi PP Miftahul Huda, foto kegiatan santri lamongan, galeri pondok pesantren kalanganyar">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ppmiftahulhuda-kalanganyar.id/galeri.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Galeri Foto Kegiatan PP Miftahul Huda Kalanganyar">
+<meta property="og:description" content="Dokumentasi foto kegiatan Pondok Pesantren Miftahul Huda Kalanganyar — tahfidz, belajar, wisuda, dan momen berharga santri.">
+<meta property="og:image" content="https://ppmiftahulhuda-kalanganyar.id/assets/images/gedung-pondok.webp">
+<meta property="og:url" content="https://ppmiftahulhuda-kalanganyar.id/galeri.html">
+<meta property="og:site_name" content="PP Miftahul Huda Kalanganyar">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/images/logo-pondok.png">
+<link rel="apple-touch-icon" href="assets/images/logo-pondok.png">
+<meta name="theme-color" content="#1B6B3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ImageGallery","name":"Galeri Foto PP Miftahul Huda Kalanganyar","description":"Dokumentasi foto kegiatan Pondok Pesantren Miftahul Huda Kalanganyar","url":"https://ppmiftahulhuda-kalanganyar.id/galeri.html","author":{"@type":"Organization","name":"PP Miftahul Huda Kalanganyar"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://ppmiftahulhuda-kalanganyar.id/"},{"@type":"ListItem","position":2,"name":"Galeri","item":"https://ppmiftahulhuda-kalanganyar.id/galeri.html"}]}
+</script>
+<style>
+/* Lightbox */
+.lightbox-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.95);z-index:9999;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.3s ease}
+.lightbox-overlay.active{opacity:1;pointer-events:all}
+.lightbox-inner{position:relative;max-width:90vw;max-height:90vh;display:flex;align-items:center;justify-content:center}
+.lightbox-img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,0.5);transition:opacity 0.2s}
+.lightbox-caption{position:absolute;bottom:-2.5rem;left:0;right:0;text-align:center;color:rgba(255,255,255,0.85);font-size:0.9rem;font-family:'Inter',sans-serif}
+.lightbox-close{position:fixed;top:1.5rem;right:1.5rem;width:44px;height:44px;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.3);border-radius:50%;color:#fff;font-size:1.4rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;z-index:10000}
+.lightbox-close:hover{background:rgba(255,255,255,0.3)}
+.lightbox-nav{position:fixed;top:50%;transform:translateY(-50%);width:48px;height:48px;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.3);border-radius:50%;color:#fff;font-size:1.5rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;z-index:10000}
+.lightbox-nav:hover{background:rgba(255,255,255,0.3)}
+.lightbox-prev{left:1rem}
+.lightbox-next{right:1rem}
+.lightbox-counter{position:fixed;top:1.5rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,0.7);font-size:0.85rem;font-family:'Inter',sans-serif;background:rgba(0,0,0,0.4);padding:0.3rem 0.8rem;border-radius:20px}
+/* Gallery Page Specific */
+.gallery-page-section{padding:5rem 0 4rem}
+.gallery-filter{display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:2rem;justify-content:center}
+.filter-btn{padding:0.5rem 1.2rem;border:2px solid var(--primary);border-radius:20px;background:transparent;color:var(--primary);font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.3s;font-family:'Inter',sans-serif}
+.filter-btn.active,.filter-btn:hover{background:var(--primary);color:#fff}
+.gallery-page-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1rem}
+.gp-item{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;cursor:pointer;background:#e5e7eb}
+.gp-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease}
+.gp-item:hover img{transform:scale(1.06)}
+.gp-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.65) 0%,transparent 50%);opacity:0;transition:opacity 0.3s;display:flex;flex-direction:column;justify-content:flex-end;padding:1rem}
+.gp-item:hover .gp-overlay{opacity:1}
+.gp-overlay span{color:#fff;font-size:0.85rem;font-weight:500}
+.gp-overlay .gp-zoom{width:36px;height:36px;background:rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:0.5rem;backdrop-filter:blur(4px)}
+.gp-item[data-hidden="true"]{display:none}
+.upload-hint{text-align:center;padding:2rem;background:var(--light-alt);border-radius:12px;border:2px dashed var(--gray-light);margin-top:2rem}
+.upload-hint p{color:var(--gray);font-size:0.9rem}
+.upload-hint strong{color:var(--primary)}
+@media(max-width:640px){.gallery-page-grid{grid-template-columns:repeat(2,1fr);gap:0.6rem}.lightbox-nav{display:none}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Langsung ke Konten</a>
+
+<!-- Navbar -->
+<nav class="navbar" aria-label="Navigasi Utama">
+<div class="container">
+<a href="index.html" class="nav-brand" aria-label="Beranda PP Miftahul Huda">
+<img src="assets/images/logo-pondok.png" alt="Logo PP Miftahul Huda" width="45" height="45" loading="eager">
+<div class="nav-brand-text"><h1>PP Miftahul Huda</h1><span>Kalanganyar - Lamongan</span></div>
+</a>
+<div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+<div class="nav-menu" id="navMenu" role="menubar">
+<a href="index.html" role="menuitem">Beranda</a>
+<div class="nav-dropdown">
+<a href="profil.html" role="menuitem" class="nav-dropdown-toggle">Tentang Kami <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+<div class="nav-dropdown-menu">
+<a href="profil.html">Profil Pesantren</a>
+<a href="profil.html#sejarah">Sejarah</a>
+<a href="alumni.html">Alumni</a>
+</div>
+</div>
+<div class="nav-dropdown">
+<a href="index.html#programs" role="menuitem" class="nav-dropdown-toggle">Pendidikan <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+<div class="nav-dropdown-menu">
+<a href="index.html#programs">Program Unggulan</a>
+<a href="program-tahfidz.html">Tahfidz Al-Quran</a>
+<a href="program-bahasa-arab.html">Bahasa Arab</a>
+<a href="program-bahasa-inggris.html">Bahasa Inggris</a>
+<a href="smk-miftahul-huda.html">SMK Miftahul Huda</a>
+<a href="index.html#schedule">Jadwal Kegiatan</a>
+</div>
+</div>
+<a href="sholawat.html" role="menuitem">Sholawat & Surat</a>
+<div class="nav-dropdown">
+<a href="berita/index.html" role="menuitem" class="nav-dropdown-toggle">Berita <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+<div class="nav-dropdown-menu">
+<a href="berita/index.html">Berita</a>
+<a href="artikel/index.html">Artikel</a>
+<a href="prestasi/index.html">Prestasi & Karya</a>
+<a href="events/index.html">Events</a>
+</div>
+</div>
+<a href="galeri.html" role="menuitem" class="active">Galeri</a>
+<a href="index.html#contact" role="menuitem">Kontak</a>
+<a href="index.html#contact" role="menuitem" class="nav-cta">Daftar Sekarang</a>
+</div>
+<button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+</div>
+</nav>
+
+<!-- Page Header -->
+<header style="background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary) 100%);padding:5rem 0 3rem;text-align:center;color:#fff;margin-top:70px">
+<div class="container">
+<nav aria-label="Breadcrumb" style="margin-bottom:1rem">
+<ol style="display:flex;gap:0.5rem;justify-content:center;align-items:center;list-style:none;font-size:0.85rem;opacity:0.8">
+<li><a href="index.html" style="color:#fff">Beranda</a></li>
+<li style="opacity:0.5">›</li>
+<li style="color:var(--accent-light)">Galeri</li>
+</ol>
+</nav>
+<h2 style="font-size:2.2rem;font-weight:800;margin-bottom:0.75rem">Galeri Kegiatan Pesantren</h2>
+<p style="opacity:0.85;max-width:560px;margin:0 auto;font-size:1rem">Dokumentasi momen berharga dalam perjalanan pendidikan dan kehidupan pesantren Miftahul Huda Kalanganyar</p>
+</div>
+</header>
+
+<main id="main" class="gallery-page-section">
+<div class="container">
+<!-- Filter -->
+<div class="gallery-filter" role="group" aria-label="Filter kategori galeri">
+<button class="filter-btn active" data-filter="all">Semua</button>
+<button class="filter-btn" data-filter="gedung">Gedung & Lingkungan</button>
+<button class="filter-btn" data-filter="kegiatan">Kegiatan Belajar</button>
+<button class="filter-btn" data-filter="santri">Santri & Santriwati</button>
+<button class="filter-btn" data-filter="acara">Acara & Pengajian</button>
+</div>
+
+<!-- Gallery Grid -->
+<div class="gallery-page-grid" id="galleryPageGrid">
+
+<!-- GEDUNG & LINGKUNGAN -->
+<div class="gp-item" data-cat="gedung" data-caption="Gedung Utama Pondok Pesantren">
+<img src="assets/images/gedung-pondok.webp" alt="Gedung utama Pondok Pesantren Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Gedung Pondok Pesantren</span></div>
+</div>
+
+<div class="gp-item" data-cat="gedung" data-caption="Taman Asri di Lingkungan Pesantren">
+<img src="assets/images/taman-pondok.webp" alt="Taman asri di lingkungan Pondok Pesantren Miftahul Huda" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Taman Pesantren</span></div>
+</div>
+
+<!-- KEGIATAN BELAJAR -->
+<div class="gp-item" data-cat="kegiatan" data-caption="Kegiatan Tahfidz Al-Quran bersama hafidz/hafidzah berpengalaman">
+<img src="assets/images/kegiatan-tahfidz.webp" alt="Kegiatan tahfidz Al-Quran di PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Kegiatan Tahfidz</span></div>
+</div>
+
+<div class="gp-item" data-cat="kegiatan" data-caption="Pembelajaran Bahasa Arab intensif di kelas">
+<img src="assets/images/kegiatan-bahasa-arab.webp" alt="Pembelajaran bahasa Arab intensif di PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Kelas Bahasa Arab</span></div>
+</div>
+
+<div class="gp-item" data-cat="kegiatan" data-caption="Program Bahasa Inggris bersama tutor Kampung Inggris Pare">
+<img src="assets/images/kegiatan-bahasa-inggris.webp" alt="Program bahasa Inggris PP Miftahul Huda bersama tutor Kampung Inggris" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Kelas Bahasa Inggris</span></div>
+</div>
+
+<div class="gp-item" data-cat="santri" data-caption="Semangat belajar santriwati membaca buku">
+<img src="assets/images/santriwati-membaca-buku.webp" alt="Santriwati PP Miftahul Huda Kalanganyar membaca buku dengan semangat" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Santriwati Membaca</span></div>
+</div>
+
+<div class="gp-item" data-cat="santri" data-caption="Semangat belajar santriwati di pesantren">
+<img src="assets/images/santriwati-belajar.webp" alt="Santriwati PP Miftahul Huda Kalanganyar belajar bersama" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Semangat Belajar</span></div>
+</div>
+
+<div class="gp-item" data-cat="acara" data-caption="Wisuda Al-Quran - Momen membanggakan para hafidzah">
+<img src="assets/images/santriwati-wisuda.webp" alt="Wisuda Al-Quran santriwati PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Wisuda Al-Quran</span></div>
+</div>
+
+<div class="gp-item" data-cat="santri" data-caption="Kebersamaan santriwati di pesantren">
+<img src="assets/images/santriwati-berdua.webp" alt="Kebersamaan santriwati PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Kebersamaan Santriwati</span></div>
+</div>
+
+<div class="gp-item" data-cat="kegiatan" data-caption="Mengaji Al-Quran di taman pesantren yang asri">
+<img src="assets/images/santriwati-mengaji-taman.webp" alt="Santriwati mengaji Al-Quran di taman PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Mengaji di Taman</span></div>
+</div>
+
+<div class="gp-item" data-cat="kegiatan" data-caption="Belajar kitab kuning di mushola pesantren">
+<img src="assets/images/santriwati-mushola-1.webp" alt="Santriwati belajar kitab kuning di mushola PP Miftahul Huda" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Belajar Kitab</span></div>
+</div>
+
+<div class="gp-item" data-cat="kegiatan" data-caption="Aktivitas ibadah dan belajar di mushola pesantren">
+<img src="assets/images/santriwati-mushola-2.webp" alt="Aktivitas di mushola PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Aktivitas di Mushola</span></div>
+</div>
+
+<div class="gp-item" data-cat="kegiatan" data-caption="Belajar Al-Quran bersama di mushola">
+<img src="assets/images/santriwati-mushola-3.webp" alt="Belajar Al-Quran bersama di mushola PP Miftahul Huda" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Belajar Al-Quran</span></div>
+</div>
+
+<div class="gp-item" data-cat="kegiatan" data-caption="Kajian kitab bersama para santriwati">
+<img src="assets/images/santriwati-mushola-4.webp" alt="Kajian kitab bersama santriwati PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Kajian Kitab</span></div>
+</div>
+
+<div class="gp-item" data-cat="santri" data-caption="Santri putra mengaji Al-Quran bersama">
+<img src="assets/images/santri-putra-mengaji.webp" alt="Santri putra mengaji Al-Quran di PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Santri Putra Mengaji</span></div>
+</div>
+
+<div class="gp-item" data-cat="santri" data-caption="Santri putra belajar mandiri di pesantren">
+<img src="assets/images/santri-putra-belajar.webp" alt="Santri putra belajar mandiri di PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Belajar Mandiri</span></div>
+</div>
+
+<div class="gp-item" data-cat="santri" data-caption="Kegiatan santri putri di pesantren Miftahul Huda">
+<img src="assets/images/kegiatan-santri-putri.webp" alt="Kegiatan santri putri PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Kegiatan Santri Putri</span></div>
+</div>
+
+<div class="gp-item" data-cat="santri" data-caption="Santri Pondok Pesantren Miftahul Huda Kalanganyar">
+<img src="assets/images/santri1.webp" alt="Santri Pondok Pesantren Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Santri Pesantren</span></div>
+</div>
+
+<div class="gp-item" data-cat="santri" data-caption="Para santri Pondok Pesantren Miftahul Huda">
+<img src="assets/images/santri2.webp" alt="Para santri Pondok Pesantren Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Santri Pesantren</span></div>
+</div>
+
+<div class="gp-item" data-cat="acara" data-caption="Peringatan Isra' Mi'raj & Haul Pendiri Pesantren">
+<img src="assets/images/peringatan-isra-miraj.webp" alt="Peringatan Isra Mi'raj dan Haul pendiri PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Peringatan Isra' Mi'raj & Haul</span></div>
+</div>
+
+<div class="gp-item" data-cat="acara" data-caption="Kegiatan pengajian umum di pesantren">
+<img src="assets/images/kegiatan-pengajian.webp" alt="Kegiatan pengajian umum di PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Kegiatan Pengajian</span></div>
+</div>
+
+<div class="gp-item" data-cat="acara" data-caption="Silaturahmi para ustadz dan pengajar pesantren">
+<img src="assets/images/kegiatan-silaturahmi.webp" alt="Silaturahmi ustadz dan pengajar PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Silaturahmi Ustadz</span></div>
+</div>
+
+<div class="gp-item" data-cat="acara" data-caption="Ziarah makam pendiri Pondok Pesantren Miftahul Huda">
+<img src="assets/images/ziarah-makam.webp" alt="Ziarah makam pendiri KH. Zayadi PP Miftahul Huda Kalanganyar" loading="lazy" width="400" height="300">
+<div class="gp-overlay"><div class="gp-zoom"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><span>Ziarah Makam Pendiri</span></div>
+</div>
+
+</div><!-- end gallery grid -->
+
+<!-- Hint untuk tambah foto -->
+<div class="upload-hint" style="margin-top:2.5rem">
+<p>📸 <strong>Ingin menambah foto baru?</strong> Upload foto ke folder <code>assets/images/</code> lalu tambahkan baris baru di halaman ini. Lihat panduan lengkap di <a href="README.md" style="color:var(--primary)">README.md</a>.</p>
+</div>
+
+</div>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Tampilan foto penuh">
+<span class="lightbox-counter" id="lightboxCounter">1 / 23</span>
+<button class="lightbox-close" id="lightboxClose" aria-label="Tutup">✕</button>
+<button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto sebelumnya">&#8249;</button>
+<div class="lightbox-inner">
+<img class="lightbox-img" id="lightboxImg" src="" alt="" width="1200" height="800">
+<div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+<button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Foto berikutnya">&#8250;</button>
+</div>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col footer-about">
+<h4>PP Miftahul Huda</h4>
+<p>Pondok Pesantren Miftahul Huda merupakan lembaga pendidikan Islam yang berkomitmen mencetak generasi Qur'ani dengan akhlak mulia dan wawasan luas sejak tahun 1985.</p>
+<div class="footer-social">
+<a href="https://www.facebook.com/share/1BZFmL1DrJ/" target="_blank" rel="noopener" aria-label="Facebook PP Miftahul Huda"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+<a href="https://www.instagram.com/ponpesmifdakalanganyar" target="_blank" rel="noopener" aria-label="Instagram PP Miftahul Huda"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+<a href="https://www.tiktok.com/@ponpesmifdakalanganyar" target="_blank" rel="noopener" aria-label="TikTok PP Miftahul Huda"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.03a8.16 8.16 0 004.77 1.52V7.1a4.85 4.85 0 01-1-.41z"/></svg></a>
+<a href="https://wa.me/6285704735274" target="_blank" rel="noopener" aria-label="WhatsApp PP Miftahul Huda"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.556-1.472A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+</div>
+</div>
+<div class="footer-col">
+<h4>Link Cepat</h4>
+<ul class="footer-links">
+<li><a href="index.html">Beranda</a></li>
+<li><a href="profil.html">Profil Pesantren</a></li>
+<li><a href="galeri.html">Galeri Foto</a></li>
+<li><a href="smk-miftahul-huda.html">SMK Miftahul Huda</a></li>
+<li><a href="alumni.html">Alumni</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Berita & Konten</h4>
+<ul class="footer-links">
+<li><a href="berita/index.html">Berita</a></li>
+<li><a href="artikel/index.html">Artikel</a></li>
+<li><a href="prestasi/index.html">Prestasi & Karya</a></li>
+<li><a href="events/index.html">Events</a></li>
+<li><a href="sholawat.html">Sholawat</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Kontak</h4>
+<ul class="footer-contact">
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Jl. KH. Zayadi RT.04 RW.01, Kalanganyar, Karanggeneng, Lamongan</li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> +62-857-0473-5274</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom"><p><div class="footer-sholawat" style="font-family:'Amiri',serif;font-size:1.25rem;color:#d4a843;margin-bottom:0.6rem;letter-spacing:0.5px;direction:rtl;">
+صَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ
+</div>
+<p style="margin:0 0 0.3rem;">© 2026 Pondok Pesantren Miftahul Huda Kalanganyar. Semua Hak Dilindungi.</p>
+<p style="font-size:0.78rem;color:#aaa;margin:0;">Dibuat dengan <span style="color:#e74c3c;">♥</span> oleh <strong style="color:#d4a843;">Fatah</strong> &nbsp;·&nbsp; <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener" style="color:#aaa;text-decoration:none;">Lisensi MIT</a></p></p></div>
+</div>
+</footer>
+
+<a href="https://wa.me/6285704735274?text=Assalamu'alaikum%2C%20saya%20ingin%20bertanya%20tentang%20Pondok%20Pesantren%20Miftahul%20Huda" class="wa-float" target="_blank" rel="noopener" aria-label="Hubungi kami via WhatsApp">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.556-1.472A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+<span>Chat WhatsApp</span>
+</a>
+
+<script>
+// Navbar
+const navToggle=document.getElementById('navToggle'),navMenu=document.getElementById('navMenu'),navOverlay=document.getElementById('navOverlay');
+function toggleNav(){const open=navMenu.classList.toggle('open');navOverlay.classList.toggle('open');navToggle.setAttribute('aria-expanded',open);document.body.style.overflow=open?'hidden':''}
+navToggle.addEventListener('click',toggleNav);
+navOverlay.addEventListener('click',toggleNav);
+document.querySelectorAll('.nav-menu a').forEach(a=>a.addEventListener('click',()=>{if(navMenu.classList.contains('open'))toggleNav()}));
+
+// Gallery Filter
+const filterBtns=document.querySelectorAll('.filter-btn');
+const items=document.querySelectorAll('.gp-item');
+filterBtns.forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    filterBtns.forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter=btn.dataset.filter;
+    items.forEach(item=>{
+      if(filter==='all'||item.dataset.cat===filter){item.style.display='block'}
+      else{item.style.display='none'}
+    });
+    updateLightboxList();
+  });
+});
+
+// Lightbox
+let lightboxItems=[];
+let currentIdx=0;
+
+function updateLightboxList(){
+  lightboxItems=[...document.querySelectorAll('.gp-item:not([style*="display: none"]):not([style*="display:none"])')];
+}
+updateLightboxList();
+
+const overlay=document.getElementById('lightbox');
+const lbImg=document.getElementById('lightboxImg');
+const lbCaption=document.getElementById('lightboxCaption');
+const lbCounter=document.getElementById('lightboxCounter');
+const lbClose=document.getElementById('lightboxClose');
+const lbPrev=document.getElementById('lightboxPrev');
+const lbNext=document.getElementById('lightboxNext');
+
+function openLightbox(idx){
+  currentIdx=idx;
+  const item=lightboxItems[currentIdx];
+  const img=item.querySelector('img');
+  const cap=item.dataset.caption||'';
+  lbImg.src=img.src;
+  lbImg.alt=img.alt;
+  lbCaption.textContent=cap;
+  lbCounter.textContent=(currentIdx+1)+' / '+lightboxItems.length;
+  overlay.classList.add('active');
+  document.body.style.overflow='hidden';
+  lbImg.focus();
+}
+function closeLightbox(){overlay.classList.remove('active');document.body.style.overflow='';}
+function showPrev(){currentIdx=(currentIdx-1+lightboxItems.length)%lightboxItems.length;openLightbox(currentIdx);}
+function showNext(){currentIdx=(currentIdx+1)%lightboxItems.length;openLightbox(currentIdx);}
+
+document.querySelectorAll('.gp-item').forEach((item,i)=>{
+  item.addEventListener('click',()=>{
+    updateLightboxList();
+    const visibleIdx=lightboxItems.indexOf(item);
+    if(visibleIdx!==-1)openLightbox(visibleIdx);
+  });
+});
+lbClose.addEventListener('click',closeLightbox);
+lbPrev.addEventListener('click',showPrev);
+lbNext.addEventListener('click',showNext);
+overlay.addEventListener('click',e=>{if(e.target===overlay)closeLightbox();});
+document.addEventListener('keydown',e=>{
+  if(!overlay.classList.contains('active'))return;
+  if(e.key==='Escape')closeLightbox();
+  if(e.key==='ArrowLeft')showPrev();
+  if(e.key==='ArrowRight')showNext();
+});
+
+// Touch swipe
+let touchStartX=0;
+overlay.addEventListener('touchstart',e=>touchStartX=e.touches[0].clientX,{passive:true});
+overlay.addEventListener('touchend',e=>{
+  const diff=touchStartX-e.changedTouches[0].clientX;
+  if(Math.abs(diff)>50){diff>0?showNext():showPrev();}
+});
+</script>
+</body>
+</html>

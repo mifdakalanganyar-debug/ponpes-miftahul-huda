@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- HALAMAN UTAMA -->
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ppmiftahulhuda-kalanganyar.id/assets/images/background.webp</image:loc>
+      <image:title>PP Miftahul Huda Kalanganyar</image:title>
+    </image:image>
+  </url>
+
+  <!-- PENDAFTARAN (Prioritas Tinggi) -->
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/pendaftaran.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- TENTANG -->
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/profil.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/alumni.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- GALERI -->
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/galeri.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PENDIDIKAN -->
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/program-tahfidz.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/program-bahasa-arab.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/program-bahasa-inggris.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/smk-miftahul-huda.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ppmiftahulhuda-kalanganyar.id/assets/images/gedung-pondok.webp</image:loc>
+      <image:title>SMK Miftahul Huda Kalanganyar</image:title>
+    </image:image>
+  </url>
+
+  <!-- KONTEN ISLAMI -->
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/sholawat.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/yasin-tahlil.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- BERITA -->
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/berita/</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/berita/smk-miftahul-huda-resmi-dibuka.html</loc>
+    <lastmod>2025-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/berita/wisuda-tahfidz-2025.html</loc>
+    <lastmod>2025-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/berita/prestasi-olimpiade-bahasa-arab.html</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/berita/program-bahasa-inggris-kampung-inggris.html</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/berita/haul-pondok-2025.html</loc>
+    <lastmod>2025-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ARTIKEL -->
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/artikel/</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/artikel/keutamaan-menghafal-quran.html</loc>
+    <lastmod>2025-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/artikel/belajar-bahasa-arab-di-pesantren.html</loc>
+    <lastmod>2025-02-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/artikel/manfaat-mondok-bagi-generasi-muda.html</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/artikel/tips-sukses-hafidz-quran.html</loc>
+    <lastmod>2025-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/artikel/peran-pesantren-dalam-pendidikan-karakter.html</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- PRESTASI -->
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/prestasi/</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/prestasi/juara-mtq-lamongan.html</loc>
+    <lastmod>2025-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/prestasi/alumni-diterima-universitas-negeri.html</loc>
+    <lastmod>2025-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/prestasi/lomba-kaligrafi-juara-1.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/prestasi/santri-hafidz-30-juz.html</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/prestasi/lomba-pidato-bahasa-arab.html</loc>
+    <lastmod>2024-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- EVENTS -->
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/events/</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/events/ppdb-2025-2026.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/events/haul-dan-isra-miraj-2025.html</loc>
+    <lastmod>2025-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/events/wisuda-santri-2025.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/events/porseni-pesantren-2025.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ppmiftahulhuda-kalanganyar.id/events/rihlah-ilmiah-2025.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

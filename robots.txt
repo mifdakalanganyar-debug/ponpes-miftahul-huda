@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Izinkan semua direktori konten
+Allow: /berita/
+Allow: /artikel/
+Allow: /prestasi/
+Allow: /events/
+Allow: /assets/
+
+# Sitemap
+Sitemap: https://ppmiftahulhuda-kalanganyar.id/sitemap.xml
+
+# Crawl-delay (opsional untuk mengurangi beban server)
+Crawl-delay: 1
