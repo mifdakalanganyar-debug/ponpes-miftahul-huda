@@ -539,11 +539,11 @@ button {
   grid-template-columns: 240px 1fr;
   gap: 3rem;
   align-items: center;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(212,168,67,0.25);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(212, 168, 67, 0.25);
   border-radius: 18px;
   padding: 2.5rem 3rem;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 .pengasuh-photo-col {
   display: flex;
@@ -562,7 +562,9 @@ button {
   object-fit: cover;
   object-position: top;
   border: 4px solid var(--accent);
-  box-shadow: 0 0 0 6px rgba(212,168,67,0.18), 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow:
+    0 0 0 6px rgba(212, 168, 67, 0.18),
+    0 10px 30px rgba(0, 0, 0, 0.3);
   display: block;
 }
 .pengasuh-ornament {
@@ -595,7 +597,7 @@ button {
   justify-content: center;
   position: relative;
   padding-left: 2rem;
-  border-left: 3px solid rgba(212,168,67,0.5);
+  border-left: 3px solid rgba(212, 168, 67, 0.5);
 }
 .pengasuh-quote-icon {
   font-size: 4.5rem;
@@ -611,13 +613,13 @@ button {
   font-style: italic;
   line-height: 1.9;
   opacity: 0.88;
-  color: rgba(255,255,255,0.92);
+  color: rgba(255, 255, 255, 0.92);
   margin: 0;
 }
 .pengasuh-footer-line {
   margin-top: 1.5rem;
   height: 2px;
-  background: linear-gradient(to right, rgba(212,168,67,0.5), transparent);
+  background: linear-gradient(to right, rgba(212, 168, 67, 0.5), transparent);
   border-radius: 2px;
 }
 @media (max-width: 900px) {
@@ -631,9 +633,11 @@ button {
     padding-left: 0;
     border-left: none;
     padding-top: 1.5rem;
-    border-top: 2px solid rgba(212,168,67,0.3);
+    border-top: 2px solid rgba(212, 168, 67, 0.3);
   }
-  .pengasuh-quote-icon { text-align: left; }
+  .pengasuh-quote-icon {
+    text-align: left;
+  }
 }
 
 /* ========== PROGRAMS ========== */
@@ -782,12 +786,45 @@ button {
 }
 
 /* ========== ALUMNI PREVIEW ========== */
-.alumni-preview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem}
-.alumni-preview-card{text-align:center;background:var(--white);border-radius:var(--radius);padding:1.5rem 1rem;box-shadow:var(--shadow);transition:all var(--transition);border-top:3px solid var(--primary)}
-.alumni-preview-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-top-color:var(--accent)}
-.alumni-preview-card img{width:80px;height:80px;border-radius:50%;object-fit:cover;margin:0 auto .75rem;border:3px solid var(--accent);object-position:top}
-.alumni-preview-card h3{font-size:.95rem;color:var(--primary);margin-bottom:.25rem}
-.alumni-uni{font-size:.78rem;color:var(--gray);line-height:1.4}
+.alumni-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.alumni-preview-card {
+  text-align: center;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.5rem 1rem;
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+  border-top: 3px solid var(--primary);
+}
+.alumni-preview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-top-color: var(--accent);
+}
+.alumni-preview-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 0.75rem;
+  border: 3px solid var(--accent);
+  object-position: top;
+}
+.alumni-preview-card h3 {
+  font-size: 0.95rem;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+.alumni-uni {
+  font-size: 0.78rem;
+  color: var(--gray);
+  line-height: 1.4;
+}
 
 /* ========== GALLERY ========== */
 .gallery-grid {
@@ -839,8 +876,14 @@ button {
   animation: galleryFadeIn 0.5s ease forwards;
 }
 @keyframes galleryFadeIn {
-  from { opacity: 0; transform: translateY(20px) scale(0.95); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 .btn-gallery-more {
   display: inline-flex;
@@ -865,12 +908,12 @@ button {
   box-shadow: var(--shadow-lg);
 }
 .btn-gallery-more:hover .btn-gallery-more-count {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   color: var(--white);
 }
 .btn-gallery-more-count {
   display: inline-block;
-  background: rgba(27,107,58,0.1);
+  background: rgba(27, 107, 58, 0.1);
   color: var(--primary);
   padding: 0.2rem 0.6rem;
   border-radius: 12px;
@@ -1456,6 +1499,152 @@ button {
   opacity: 0.5;
 }
 
+/* ========== MUSIC PLAYER FLOAT ========== */
+.music-float {
+  position: fixed;
+  bottom: 90px;
+  right: 28px;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(27, 107, 58, 0.35);
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.music-float::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: conic-gradient(var(--accent), var(--primary), var(--accent));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.music-float.playing::before {
+  opacity: 1;
+  animation: musicGlow 2s linear infinite;
+}
+.music-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(27, 107, 58, 0.5);
+}
+.music-float svg {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s;
+}
+.music-float.playing svg {
+  animation: musicSpin 3s linear infinite;
+}
+.music-float .music-tooltip {
+  position: absolute;
+  right: 60px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.music-float:hover .music-tooltip {
+  opacity: 1;
+}
+.music-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 18px;
+}
+.music-bars span {
+  display: block;
+  width: 3px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: height 0.2s;
+}
+.music-float:not(.playing) .music-bars span {
+  height: 4px !important;
+}
+.music-float.playing .music-bars span:nth-child(1) {
+  animation: musicBar1 0.8s ease-in-out infinite;
+}
+.music-float.playing .music-bars span:nth-child(2) {
+  animation: musicBar2 0.6s ease-in-out infinite 0.1s;
+}
+.music-float.playing .music-bars span:nth-child(3) {
+  animation: musicBar3 0.7s ease-in-out infinite 0.2s;
+}
+.music-float.playing .music-bars span:nth-child(4) {
+  animation: musicBar4 0.5s ease-in-out infinite 0.15s;
+}
+
+@keyframes musicBar1 {
+  0%,
+  100% {
+    height: 6px;
+  }
+  50% {
+    height: 16px;
+  }
+}
+@keyframes musicBar2 {
+  0%,
+  100% {
+    height: 10px;
+  }
+  50% {
+    height: 6px;
+  }
+}
+@keyframes musicBar3 {
+  0%,
+  100% {
+    height: 4px;
+  }
+  50% {
+    height: 14px;
+  }
+}
+@keyframes musicBar4 {
+  0%,
+  100% {
+    height: 12px;
+  }
+  50% {
+    height: 4px;
+  }
+}
+@keyframes musicSpin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes musicGlow {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* ========== WHATSAPP FLOAT ========== */
 .wa-float {
   position: fixed;
@@ -1759,6 +1948,12 @@ button {
   }
 
   /* Adjust floating elements for bottom nav */
+  .music-float {
+    bottom: 140px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+  }
   .wa-float {
     bottom: 80px;
     right: 16px;

@@ -1,3 +1,6 @@
+# Robots.txt - Pondok Pesantren Miftahul Huda Kalanganyar
+# https://ponpes-miftahul-huda.vercel.app/
+
 User-agent: *
 Allow: /
 
@@ -8,8 +11,34 @@ Allow: /prestasi/
 Allow: /events/
 Allow: /assets/
 
-# Sitemap
-Sitemap: https://ppmiftahulhuda-kalanganyar.id/sitemap.xml
+# Blokir file internal
+Disallow: /.git/
+Disallow: /.agent/
 
-# Crawl-delay (opsional untuk mengurangi beban server)
+# Sitemap
+Sitemap: https://ponpes-miftahul-huda.vercel.app/sitemap.xml
+
+# Crawl-delay
 Crawl-delay: 1
+
+# Google AI / AEO / GEO — izinkan crawling AI
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /

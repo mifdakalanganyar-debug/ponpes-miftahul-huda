@@ -1,10 +1,11 @@
-# Website Resmi PP Miftahul Huda Kalanganyar
+# 🕌 Website Resmi PP Miftahul Huda Kalanganyar
 
 Website resmi Pondok Pesantren Miftahul Huda Kalanganyar, Karanggeneng, Lamongan.
 
-- **Domain:** https://ppmiftahulhuda-kalanganyar.id
-- **Kontak:** +62 857-0473-5274
+- **Domain:** https://ponpes-miftahul-huda.vercel.app
+- **Kontak WhatsApp:** +62 813-3205-2559
 - **Developer:** Fatah (Lisensi MIT)
+- **Terakhir diperbarui:** 7 April 2026
 
 ---
 
@@ -17,7 +18,7 @@ Website resmi Pondok Pesantren Miftahul Huda Kalanganyar, Karanggeneng, Lamongan
 | Beranda           | `index.html`                  | Hero, profil, program, galeri, kontak   |
 | Profil            | `profil.html`                 | Sejarah, visi-misi, struktur organisasi |
 | Alumni            | `alumni.html`                 | Profil alumni berprestasi               |
-| Galeri            | `galeri.html`                 | Foto kegiatan dengan lightbox           |
+| Galeri            | `galeri.html`                 | Foto kegiatan dengan lightbox & filter  |
 | **Pendaftaran ★** | `pendaftaran.html`            | Formulir Pondok & SMK → Google Sheets   |
 | Sholawat & Surat  | `sholawat.html`               | Sholawat, Surat Pilihan, Yasin & Tahlil |
 | Yasin & Tahlil    | `yasin-tahlil.html`           | Yasin 83 ayat, Tahlil, Doa lengkap      |
@@ -75,7 +76,7 @@ Website resmi Pondok Pesantren Miftahul Huda Kalanganyar, Karanggeneng, Lamongan
 ## Struktur Folder
 
 ```
-website-mifda/
+mifdakalanganyar/
 ├── index.html
 ├── profil.html
 ├── alumni.html
@@ -89,6 +90,7 @@ website-mifda/
 ├── program-bahasa-inggris.html
 ├── robots.txt
 ├── sitemap.xml
+├── README.md
 │
 ├── berita/
 │   ├── index.html
@@ -156,12 +158,9 @@ Timestamp | Jalur | Nama | Tempat Lahir | Tgl Lahir | Jenis Kelamin | Asal Sekol
 ```javascript
 function doPost(e) {
   try {
-    // ⬇️ GANTI dengan ID Spreadsheet Anda
     var SPREADSHEET_ID = "GANTI_DENGAN_ID_SPREADSHEET_ANDA";
-
     var sheet = SpreadsheetApp.openById(SPREADSHEET_ID).getActiveSheet();
     var data = JSON.parse(e.postData.contents);
-
     sheet.appendRow([
       data.timestamp || new Date().toLocaleString("id-ID"),
       data.jalur || "",
@@ -178,7 +177,6 @@ function doPost(e) {
       data.sistem_pendaftaran || "",
       data.pesan || "",
     ]);
-
     return ContentService.createTextOutput(
       JSON.stringify({ result: "success" }),
     ).setMimeType(ContentService.MimeType.JSON);
@@ -206,50 +204,17 @@ function doGet(e) {
    - Execute as: **Me**
    - Who has access: **Anyone**
 4. Klik **Deploy** → **Authorize access** → **Allow**
-5. **Salin URL** deployment (bentuk: `https://script.google.com/macros/s/AKfycb.../exec`)
+5. **Salin URL** deployment
 
 ### Langkah 4 — Masukkan URL ke Website
 
-Buka `pendaftaran.html`, cari sekitar **baris 718–719**:
+Buka `pendaftaran.html`, cari baris `APPS_SCRIPT_URL`:
 
 ```javascript
 const APPS_SCRIPT_URL_PONDOK =
   "https://script.google.com/macros/s/GANTI.../exec";
 const APPS_SCRIPT_URL_SMK = "https://script.google.com/macros/s/GANTI.../exec";
 ```
-
-Ganti keduanya dengan URL deployment dari Langkah 3.
-
-### ⚠️ Catatan Penting
-
-| Topik                  | Keterangan                                                                                                                |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **Fallback**           | Jika URL belum diisi/mengandung kata `GANTI`, formulir otomatis redirect ke WhatsApp                                      |
-| **File Upload**        | Foto 3x4 & fotocopy KK tidak dikirim ke Sheets (tidak didukung). Pendaftar diminta kirim file via WhatsApp setelah submit |
-| **Update Script**      | Jika kode Apps Script diubah, buat **New Deployment** baru (jangan edit yang lama)                                        |
-| **Sistem Pendaftaran** | Field ini berisi: Mandiri / Beasiswa Prestasi / Beasiswa Yatim Piatu / Beasiswa Fakir Miskin                              |
-
----
-
-## Fitur Formulir Pendaftaran
-
-Formulir di `pendaftaran.html` memiliki dua jalur (tab):
-
-### Tab Pondok Pesantren
-
-- Data santri: Nama, TTL, Jenis Kelamin, Asal Sekolah
-- Data orang tua: Nama, No. WA, Email, Alamat
-- Pilihan: Program (Tahfidz/Bahasa Arab/Inggris/Madrasah/Kombinasi)
-- **Sistem Pendaftaran:** Mandiri / Beasiswa Prestasi / Beasiswa Yatim-Piatu / Beasiswa Fakir-Miskin
-- **Lampiran:** Upload Foto 3x4 (JPG/PNG) + Upload Fotocopy KK (JPG/PNG/PDF)
-
-### Tab SMK Miftahul Huda
-
-- Data siswa: Nama, TTL, Jenis Kelamin, Asal SMP/MTs, NISN
-- Data orang tua: Nama, No. WA, Email, Alamat
-- Pilihan: Pilihan Asrama (Mondok / Pulang Pergi)
-- **Sistem Pendaftaran:** Mandiri / Beasiswa Prestasi / Beasiswa Yatim-Piatu / Beasiswa Fakir-Miskin
-- **Lampiran:** Upload Foto 3x4 + Upload Fotocopy KK
 
 ---
 
@@ -260,14 +225,25 @@ Formulir di `pendaftaran.html` memiliki dua jalur (tab):
 - ✅ Title tag unik & keyword-rich di setiap halaman
 - ✅ Meta description deskriptif (maks 160 karakter)
 - ✅ Heading hierarchy (H1 → H2 → H3) terstruktur
-- ✅ Schema.org: `EducationalOrganization`, `Article`, `BreadcrumbList`
-- ✅ OpenGraph & Twitter Card di semua halaman
-- ✅ `sitemap.xml` mencakup semua URL termasuk `pendaftaran.html`
-- ✅ `robots.txt` konfigurasi crawler
+- ✅ Schema.org: `EducationalOrganization`, `Article`, `FAQPage`, `BreadcrumbList`
+- ✅ OpenGraph & Twitter Card lengkap di semua halaman
+- ✅ `sitemap.xml` mencakup semua URL
+- ✅ `robots.txt` dengan izin AI bot (AEO/GEO ready)
 - ✅ Canonical URL setiap halaman
 - ✅ Gambar WebP dengan `alt` deskriptif & lazy loading
+- ✅ Favicon WebP optimized
 - ✅ Mobile-first responsive 100%
 - ✅ Breadcrumb navigasi di semua halaman artikel
+- ✅ Artikel SEO-friendly (min. 800+ kata per artikel)
+- ✅ AI Overview friendly (AEO & GEO optimized)
+
+### AI Overview / AEO / GEO Optimization
+
+- FAQ Schema pada halaman utama
+- Konten terstruktur dengan heading hierarchy yang jelas
+- Jawaban langsung (direct answer) di awal setiap artikel
+- Data terstruktur (structured data) di semua halaman
+- robots.txt mengizinkan GPTBot, Google-Extended, ChatGPT-User, PerplexityBot
 
 ### Keyword Target
 
@@ -277,34 +253,21 @@ Formulir di `pendaftaran.html` memiliki dua jalur (tab):
 
 ---
 
-## Footer (Semua Halaman)
-
-Semua halaman website memiliki footer seragam berisi:
-
-```
-صَلَّى اللهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ
-
-© 2026 PP Miftahul Huda Kalanganyar. Semua Hak Dilindungi.
-Dibuat dengan ♥ oleh Fatah · Lisensi MIT
-```
-
----
-
 ## Social Media & Kontak
 
 | Platform  | Link                                       |
 | --------- | ------------------------------------------ |
-| WhatsApp  | https://wa.me/6285704735274                |
+| WhatsApp  | https://wa.me/6281332052559                |
 | Instagram | @ponpesmifdakalanganyar                    |
 | Facebook  | https://www.facebook.com/share/1BZFmL1DrJ/ |
 | TikTok    | @ponpesmifdakalanganyar                    |
-| Website   | https://ppmiftahulhuda-kalanganyar.id      |
+| Website   | https://ponpes-miftahul-huda.vercel.app    |
 
 **NAP (harus konsisten di semua platform):**
 
 - **Nama:** Pondok Pesantren Miftahul Huda Kalanganyar
 - **Alamat:** Jl. KH. Zayadi RT.04 RW.01, Kalanganyar, Karanggeneng, Lamongan 62254
-- **Telepon:** +62 857-0473-5274
+- **Telepon:** +62 813-3205-2559
 
 ---
 
@@ -312,7 +275,7 @@ Dibuat dengan ♥ oleh Fatah · Lisensi MIT
 
 ### Berita / Artikel / Prestasi / Event Baru
 
-1. Buat file HTML baru di folder terkait (salin dari file artikel existing)
+1. Buat file HTML baru di folder terkait (salin dari file existing)
 2. Update: `<title>`, `<meta description>`, `<h2>`, konten artikel, tanggal, gambar
 3. Tambahkan kartu di halaman `index.html` folder terkait
 4. Tambahkan URL ke `sitemap.xml`
@@ -320,7 +283,6 @@ Dibuat dengan ♥ oleh Fatah · Lisensi MIT
 ### Foto Galeri Baru
 
 ```bash
-# Kompres & konversi ke WebP
 convert foto.jpg -resize "800x800>" -quality 75 assets/images/namafile.webp
 ```
 
@@ -328,15 +290,18 @@ Tambahkan entry di `galeri.html`.
 
 ---
 
-## Alumni Berprestasi
+## Changelog
 
-| Nama                | Universitas               | Jurusan                   |
-| ------------------- | ------------------------- | ------------------------- |
-| M. Ridho Al-Mahbub  | Universitas Brawijaya     | Peternakan                |
-| M. Maslukh Alfanani | Universitas Negeri Malang | Pendidikan Bahasa Inggris |
-| Khasby Assidiq      | UPN Veteran Surabaya      | —                         |
+### 7 April 2026
+
+- ✅ Tambah nama Pengasuh "KH. NUR AS'ADI, M.AG." di halaman utama
+- ✅ Update alt text foto pengasuh dengan nama lengkap
+- ✅ Hapus credit line "Dibuat dengan ♥ oleh Fatah" dari semua halaman
+- ✅ Tambah link social media (Instagram, TikTok, Facebook) di 20 halaman artikel
+- ✅ Update tahun berdiri SMK dari 2021 → 2026
+- ✅ Update sitemap.xml lastmod ke 2026-04-07
 
 ---
 
-_Terakhir diperbarui: 4 April 2026_
+_Terakhir diperbarui: 7 April 2026_
 _Developer: Fatah · Lisensi MIT_
