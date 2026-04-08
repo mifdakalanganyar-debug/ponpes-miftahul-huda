@@ -5,19 +5,23 @@
   <!-- HALAMAN UTAMA -->
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://ponpes-miftahul-huda.vercel.app/assets/images/background.webp</image:loc>
-      <image:title>PP Miftahul Huda Kalanganyar</image:title>
+      <image:title>Pondok Pesantren Miftahul Huda Kalanganyar Lamongan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ponpes-miftahul-huda.vercel.app/assets/images/logo-pondok.webp</image:loc>
+      <image:title>Logo PP Miftahul Huda Kalanganyar</image:title>
     </image:image>
   </url>
 
   <!-- PENDAFTARAN (Prioritas Tinggi) -->
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/pendaftaran.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -25,13 +29,17 @@
   <!-- TENTANG -->
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/profil.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ponpes-miftahul-huda.vercel.app/assets/images/taman-pondok.webp</image:loc>
+      <image:title>Taman Pondok Pesantren Miftahul Huda Kalanganyar</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/alumni.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -39,33 +47,49 @@
   <!-- GALERI -->
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/galeri.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ponpes-miftahul-huda.vercel.app/assets/images/gedung-pondok.webp</image:loc>
+      <image:title>Gedung Pondok Pesantren Miftahul Huda</image:title>
+    </image:image>
   </url>
 
   <!-- PENDIDIKAN -->
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/program-tahfidz.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ponpes-miftahul-huda.vercel.app/assets/images/kegiatan-tahfidz.webp</image:loc>
+      <image:title>Program Tahfidz Al-Quran PP Miftahul Huda</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/program-bahasa-arab.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ponpes-miftahul-huda.vercel.app/assets/images/kegiatan-bahasa-arab.webp</image:loc>
+      <image:title>Program Bahasa Arab PP Miftahul Huda</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/program-bahasa-inggris.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ponpes-miftahul-huda.vercel.app/assets/images/kegiatan-bahasa-inggris.webp</image:loc>
+      <image:title>Program Bahasa Inggris PP Miftahul Huda</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/smk-miftahul-huda.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -77,13 +101,13 @@
   <!-- KONTEN ISLAMI -->
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/sholawat.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/yasin-tahlil.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -91,37 +115,37 @@
   <!-- BERITA -->
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/berita/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/berita/smk-miftahul-huda-resmi-dibuka.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/berita/wisuda-tahfidz-2025.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/berita/prestasi-olimpiade-bahasa-arab.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/berita/program-bahasa-inggris-kampung-inggris.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/berita/haul-pondok-2025.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -129,37 +153,37 @@
   <!-- ARTIKEL -->
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/artikel/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/artikel/keutamaan-menghafal-quran.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/artikel/belajar-bahasa-arab-di-pesantren.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/artikel/manfaat-mondok-bagi-generasi-muda.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/artikel/tips-sukses-hafidz-quran.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/artikel/peran-pesantren-dalam-pendidikan-karakter.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -167,37 +191,37 @@
   <!-- PRESTASI -->
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/prestasi/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/prestasi/juara-mtq-lamongan.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/prestasi/alumni-diterima-universitas-negeri.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/prestasi/lomba-kaligrafi-juara-1.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/prestasi/santri-hafidz-30-juz.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/prestasi/lomba-pidato-bahasa-arab.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -205,37 +229,37 @@
   <!-- EVENTS -->
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/events/</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/events/ppdb-2025-2026.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/events/haul-dan-isra-miraj-2025.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/events/wisuda-santri-2025.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/events/porseni-pesantren-2025.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ponpes-miftahul-huda.vercel.app/events/rihlah-ilmiah-2025.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://ponpes-miftahul-huda.vercel.app/pendaftaran.html">
 <meta property="og:image" content="https://ponpes-miftahul-huda.vercel.app/assets/images/background.webp">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" href="assets/images/logo-pondok.webp">
+<link rel="icon" type="image/webp" href="assets/images/logo-pondok.webp">
 <meta name="theme-color" content="#1B6B3A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -385,6 +385,20 @@
   .daftar-tab-btn.active-smk { border-left-color: var(--daftar-smk); border-bottom: none; }
 }
 </style>
+<meta property="og:image:secure_url" content="https://ponpes-miftahul-huda.vercel.app/assets/images/background.webp" />
+<meta property="og:image:type" content="image/webp" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Pendaftaran Santri Baru Pondok Pesantren Miftahul Huda Kalanganyar" />
+<meta property="og:site_name" content="PP Miftahul Huda Kalanganyar" />
+<meta property="og:locale" content="id_ID" />
+<meta property="og:updated_time" content="2026-04-09T00:00:00+07:00" />
+<meta name="twitter:url" content="https://ponpes-miftahul-huda.vercel.app/pendaftaran.html" />
+<meta name="twitter:image" content="https://ponpes-miftahul-huda.vercel.app/assets/images/background.webp" />
+<meta name="twitter:title" content="Pendaftaran Online - PP & SMK Miftahul Huda Kalanganyar" />
+<meta name="twitter:description" content="Daftar online Pondok Pesantren atau SMK Miftahul Huda Kalanganyar Lamongan. Formulir mudah dan cepat." />
+<link rel="apple-touch-icon" href="assets/images/logo-pondok.webp" />
+<meta name="author" content="Pondok Pesantren Miftahul Huda Kalanganyar" />
 </head>
 <body>
 <a href="#main" class="skip-link">Langsung ke Konten</a>
@@ -466,14 +480,6 @@
 <div class="info-item"><div class="icon">📍</div><div><strong>Alamat</strong>Jl. KH. Zayadi RT.04 RW.01 Kalanganyar, Karanggeneng, Lamongan</div></div>
 <div class="info-hotline">
 <span>Informasi & Pendaftaran</span>
-<!-- Background Audio -->
-<audio id="bgMusic" loop preload="auto">
-<source src="assets/audio/videolatar.mp3" type="audio/mpeg">
-</audio>
-<button class="music-float" id="musicToggle" aria-label="Toggle Musik Latar" title="Putar / Pause Musik">
-<div class="music-bars"><span></span><span></span><span></span><span></span></div>
-<div class="music-tooltip">🎵 Putar Sholawat</div>
-</button>
 <a href="https://wa.me/6281332052559" target="_blank" rel="noopener">+62 813-3205-2559</a>
 </div>
 </div>
@@ -885,8 +891,6 @@ const stb=document.getElementById('scrollTop');
 window.addEventListener('scroll',()=>stb.classList.toggle('visible',window.scrollY>300));
 stb.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
-// ===== Background Music Player =====
-(function(){var a=document.getElementById("bgMusic"),b=document.getElementById("musicToggle");if(!a||!b)return;var t=b.querySelector(".music-tooltip");a.volume=0.3;function u(p){if(p){b.classList.add("playing");if(t)t.textContent="⏸ Pause Sholawat"}else{b.classList.remove("playing");if(t)t.textContent="🎵 Putar Sholawat"}}var w=localStorage.getItem("bgMusicPlaying")==="true";if(w){var pp=a.play();if(pp!==undefined)pp.then(function(){u(true)}).catch(function(){u(false)})}b.addEventListener("click",function(){if(a.paused){a.play().then(function(){u(true);localStorage.setItem("bgMusicPlaying","true")}).catch(function(){})}else{a.pause();u(false);localStorage.setItem("bgMusicPlaying","false")}});a.addEventListener("ended",function(){u(false)})})();
 </script>
 </body>
 </html>

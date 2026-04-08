@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SMK Miftahul Huda Kalanganyar">
 <meta name="twitter:description" content="Sekolah Menengah Kejuruan berbasis pesantren di Kalanganyar, Lamongan. Pendidikan vokasional modern dengan nilai-nilai Islam.">
-<link rel="icon" type="image/png" href="assets/images/logo-pondok.webp">
+<link rel="icon" type="image/webp" href="assets/images/logo-pondok.webp">
 <link rel="apple-touch-icon" href="assets/images/logo-pondok.webp">
 <meta name="theme-color" content="#1B6B3A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +30,16 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://ponpes-miftahul-huda.vercel.app/"},{"@type":"ListItem","position":2,"name":"Pendidikan","item":"https://ponpes-miftahul-huda.vercel.app/index.html#programs"},{"@type":"ListItem","position":3,"name":"SMK Miftahul Huda","item":"https://ponpes-miftahul-huda.vercel.app/smk-miftahul-huda.html"}]}
 </script>
+<meta property="og:image:secure_url" content="https://ponpes-miftahul-huda.vercel.app/assets/images/gedung-pondok.webp" />
+<meta property="og:image:type" content="image/webp" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="SMK Miftahul Huda Kalanganyar - Sekolah Kejuruan Berbasis Pesantren" />
+<meta property="og:locale" content="id_ID" />
+<meta property="og:updated_time" content="2026-04-09T00:00:00+07:00" />
+<meta name="twitter:url" content="https://ponpes-miftahul-huda.vercel.app/smk-miftahul-huda.html" />
+<meta name="twitter:image" content="https://ponpes-miftahul-huda.vercel.app/assets/images/gedung-pondok.webp" />
+<meta name="author" content="Pondok Pesantren Miftahul Huda Kalanganyar" />
 </head>
 <body>
 <a href="#main" class="skip-link">Langsung ke Konten</a>
@@ -378,15 +388,6 @@
 </div>
 </footer>
 
-<!-- Background Audio -->
-<audio id="bgMusic" loop preload="auto">
-<source src="assets/audio/videolatar.mp3" type="audio/mpeg">
-</audio>
-<button class="music-float" id="musicToggle" aria-label="Toggle Musik Latar" title="Putar / Pause Musik">
-<div class="music-bars"><span></span><span></span><span></span><span></span></div>
-<div class="music-tooltip">🎵 Putar Sholawat</div>
-</button>
-
 <a href="https://wa.me/6281332052559?text=Assalamu'alaikum%2C%20saya%20ingin%20info%20SMK%20Miftahul%20Huda" class="wa-float" target="_blank" rel="noopener" aria-label="Tanya tentang SMK via WhatsApp">
 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.556-1.472A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
 <span>Info SMK</span>
@@ -402,8 +403,6 @@ const fadeEls=document.querySelectorAll('.fade-up');
 const fadeObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');fadeObs.unobserve(e.target)}})},{threshold:.1});
 fadeEls.forEach(el=>fadeObs.observe(el));
 
-// ===== Background Music Player =====
-(function(){var a=document.getElementById("bgMusic"),b=document.getElementById("musicToggle");if(!a||!b)return;var t=b.querySelector(".music-tooltip");a.volume=0.3;function u(p){if(p){b.classList.add("playing");if(t)t.textContent="⏸ Pause Sholawat"}else{b.classList.remove("playing");if(t)t.textContent="🎵 Putar Sholawat"}}var w=localStorage.getItem("bgMusicPlaying")==="true";if(w){var pp=a.play();if(pp!==undefined)pp.then(function(){u(true)}).catch(function(){u(false)})}b.addEventListener("click",function(){if(a.paused){a.play().then(function(){u(true);localStorage.setItem("bgMusicPlaying","true")}).catch(function(){})}else{a.pause();u(false);localStorage.setItem("bgMusicPlaying","false")}});a.addEventListener("ended",function(){u(false)})})();
 </script>
 </body>
 </html>

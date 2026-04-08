@@ -5,7 +5,7 @@ Website resmi Pondok Pesantren Miftahul Huda Kalanganyar, Karanggeneng, Lamongan
 - **Domain:** https://ponpes-miftahul-huda.vercel.app
 - **Kontak WhatsApp:** +62 813-3205-2559
 - **Developer:** Fatah (Lisensi MIT)
-- **Terakhir diperbarui:** 7 April 2026
+- **Terakhir diperbarui:** 9 April 2026
 
 ---
 
@@ -125,6 +125,7 @@ mifdakalanganyar/
 │   └── rihlah-ilmiah-2025.html
 │
 └── assets/
+    ├── audio/videolatar.mp3   🎵 Background music (homepage only)
     ├── css/style.css
     ├── images/          (format WebP)
     └── pdf/
@@ -226,16 +227,18 @@ const APPS_SCRIPT_URL_SMK = "https://script.google.com/macros/s/GANTI.../exec";
 - ✅ Meta description deskriptif (maks 160 karakter)
 - ✅ Heading hierarchy (H1 → H2 → H3) terstruktur
 - ✅ Schema.org: `EducationalOrganization`, `Article`, `FAQPage`, `BreadcrumbList`
-- ✅ OpenGraph & Twitter Card lengkap di semua halaman
-- ✅ `sitemap.xml` mencakup semua URL
-- ✅ `robots.txt` dengan izin AI bot (AEO/GEO ready)
+- ✅ OpenGraph lengkap (og:image:secure_url, og:image:type, og:image:alt, og:updated_time)
+- ✅ Twitter/X Card lengkap (twitter:url, twitter:title, twitter:description, twitter:image)
+- ✅ `sitemap.xml` dengan image tags mencakup semua URL
+- ✅ `robots.txt` dengan izin AI/LLM bot lengkap (AEO/GEO ready)
 - ✅ Canonical URL setiap halaman
 - ✅ Gambar WebP dengan `alt` deskriptif & lazy loading
-- ✅ Favicon WebP optimized
+- ✅ Favicon WebP optimized + apple-touch-icon
 - ✅ Mobile-first responsive 100%
 - ✅ Breadcrumb navigasi di semua halaman artikel
 - ✅ Artikel SEO-friendly (min. 800+ kata per artikel)
 - ✅ AI Overview friendly (AEO & GEO optimized)
+- ✅ Background audio sholawat (homepage only, auto-play on first interaction)
 
 ### AI Overview / AEO / GEO Optimization
 
@@ -243,7 +246,7 @@ const APPS_SCRIPT_URL_SMK = "https://script.google.com/macros/s/GANTI.../exec";
 - Konten terstruktur dengan heading hierarchy yang jelas
 - Jawaban langsung (direct answer) di awal setiap artikel
 - Data terstruktur (structured data) di semua halaman
-- robots.txt mengizinkan GPTBot, Google-Extended, ChatGPT-User, PerplexityBot
+- robots.txt mengizinkan GPTBot, Google-Extended, ChatGPT-User, PerplexityBot, ClaudeBot, CCBot, meta-externalagent
 
 ### Keyword Target
 
@@ -292,6 +295,22 @@ Tambahkan entry di `galeri.html`.
 
 ## Changelog
 
+### 9 April 2026
+
+- ✅ Audio sholawat latar: hanya aktif di `index.html` (homepage), dihapus dari 33 halaman lain
+- ✅ Auto-play audio saat user pertama kali berinteraksi (klik/scroll/sentuh)
+- ✅ Optimasi SEO lengkap di 34 halaman:
+  - OpenGraph lengkap (og:image:secure_url, og:image:type, og:image:width, og:image:height, og:image:alt, og:site_name, og:locale, og:updated_time)
+  - Twitter/X Card lengkap (twitter:url, twitter:title, twitter:description, twitter:image)
+  - Meta robots dengan max-snippet, max-image-preview, max-video-preview
+  - Favicon type fix (image/png → image/webp)
+  - apple-touch-icon di semua halaman
+  - Meta author di semua halaman
+- ✅ Update `robots.txt`: tambah AI/LLM crawlers (ClaudeBot, CCBot, meta-externalagent, cohere-ai, social media bots)
+- ✅ Update `sitemap.xml`: lastmod 2026-04-09, tambah image tags untuk halaman utama
+- ✅ Bersihkan sisa credit line "Dibuat oleh Fatah" dari profil.html
+- ✅ Update README.md
+
 ### 7 April 2026
 
 - ✅ Tambah nama Pengasuh "KH. NUR AS'ADI, M.AG." di halaman utama
@@ -303,5 +322,5 @@ Tambahkan entry di `galeri.html`.
 
 ---
 
-_Terakhir diperbarui: 7 April 2026_
+_Terakhir diperbarui: 9 April 2026_
 _Developer: Fatah · Lisensi MIT_

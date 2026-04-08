@@ -56,6 +56,11 @@
 .key-point{background:linear-gradient(135deg,#f0faf4,#e8f5ee);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border-left:4px solid var(--primary)}
 .key-point strong{color:var(--primary)}
 </style>
+<meta property="og:image:secure_url" content="https://ponpes-miftahul-huda.vercel.app/assets/images/kegiatan-bahasa-arab.webp" />
+<meta property="og:image:type" content="image/webp" />
+<meta property="og:image:alt" content="Pondok Pesantren Miftahul Huda Kalanganyar Lamongan" />
+<meta property="og:updated_time" content="2026-04-09T00:00:00+07:00" />
+<meta name="twitter:url" content="https://ponpes-miftahul-huda.vercel.app/berita/prestasi-olimpiade-bahasa-arab.html" />
 </head>
 <body>
 <a href="#main" class="skip-link">Langsung ke Konten</a>
@@ -126,14 +131,6 @@
 
 <div class="article-share">
 <p style="font-weight:600;margin-bottom:.75rem">Bagikan Artikel Ini:</p>
-<!-- Background Audio -->
-<audio id="bgMusic" loop preload="auto">
-<source src="../assets/audio/videolatar.mp3" type="audio/mpeg">
-</audio>
-<button class="music-float" id="musicToggle" aria-label="Toggle Musik Latar" title="Putar / Pause Musik">
-<div class="music-bars"><span></span><span></span><span></span><span></span></div>
-<div class="music-tooltip">🎵 Putar Sholawat</div>
-</button>
 <a href="https://wa.me/?text=Santri%20PP%20Miftahul%20Huda%20Raih%20Juara%201%20Olimpiade%20Bahasa%20Arab%20-%20https://ponpes-miftahul-huda.vercel.app/berita/prestasi-olimpiade-bahasa-arab.html" target="_blank" rel="noopener">WhatsApp</a>
 <a href="../pendaftaran.html">Daftar Sekarang →</a>
 </div>
@@ -158,8 +155,6 @@ function toggleNav(){const o=navMenu.classList.toggle("open");navOverlay.classLi
 navToggle.addEventListener("click",toggleNav);navOverlay.addEventListener("click",toggleNav);
 document.querySelectorAll(".nav-menu a").forEach(a=>a.addEventListener("click",()=>{if(navMenu.classList.contains("open"))toggleNav()}));
 
-// ===== Background Music Player =====
-(function(){var a=document.getElementById("bgMusic"),b=document.getElementById("musicToggle");if(!a||!b)return;var t=b.querySelector(".music-tooltip");a.volume=0.3;function u(p){if(p){b.classList.add("playing");if(t)t.textContent="⏸ Pause Sholawat"}else{b.classList.remove("playing");if(t)t.textContent="🎵 Putar Sholawat"}}var w=localStorage.getItem("bgMusicPlaying")==="true";if(w){var pp=a.play();if(pp!==undefined)pp.then(function(){u(true)}).catch(function(){u(false)})}b.addEventListener("click",function(){if(a.paused){a.play().then(function(){u(true);localStorage.setItem("bgMusicPlaying","true")}).catch(function(){})}else{a.pause();u(false);localStorage.setItem("bgMusicPlaying","false")}});a.addEventListener("ended",function(){u(false)})})();
 </script>
 </body>
 </html>
