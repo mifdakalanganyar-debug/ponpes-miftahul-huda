@@ -125,9 +125,8 @@ mifdakalanganyar/
 │   └── rihlah-ilmiah-2025.html
 │
 └── assets/
-    ├── audio/videolatar.mp3   🎵 Background music (homepage only)
     ├── css/style.css
-    ├── images/          (format WebP)
+    ├── images/          (34 file WebP)
     └── pdf/
 ```
 
@@ -297,8 +296,10 @@ Tambahkan entry di `galeri.html`.
 
 ### 9 April 2026
 
-- ✅ Audio sholawat latar: hanya aktif di `index.html` (homepage), dihapus dari 33 halaman lain
-- ✅ Auto-play audio saat user pertama kali berinteraksi (klik/scroll/sentuh)
+- ✅ **Bersihkan folder**: hapus `__pycache__/`, `assets/audio/`, `assets/js/` (kosong), `assets/images/original-backup/`, `assets/images/gallery-optimized/`, logo duplikat
+- ✅ **Buat `alumni.html`**: halaman profil 4 alumni berprestasi dengan SEO lengkap (sebelumnya file kosong 0 byte)
+- ✅ Audio sholawat dihapus total dari semua halaman (tidak bisa diimplementasi karena kebijakan autoplay browser modern)
+- ✅ Hapus tombol musik floating (music-float) dari `index.html` dan CSS
 - ✅ Optimasi SEO lengkap di 34 halaman:
   - OpenGraph lengkap (og:image:secure_url, og:image:type, og:image:width, og:image:height, og:image:alt, og:site_name, og:locale, og:updated_time)
   - Twitter/X Card lengkap (twitter:url, twitter:title, twitter:description, twitter:image)

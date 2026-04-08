@@ -1500,97 +1500,7 @@ button {
 }
 
 /* ========== MUSIC PLAYER FLOAT ========== */
-.music-float {
-  position: fixed;
-  bottom: 90px;
-  right: 28px;
-  z-index: 999;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(27, 107, 58, 0.35);
-  cursor: pointer;
-  border: none;
-  font-family: inherit;
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-.music-float::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  border-radius: 50%;
-  background: conic-gradient(var(--accent), var(--primary), var(--accent));
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.music-float.playing::before {
-  opacity: 1;
-  animation: musicGlow 2s linear infinite;
-}
-.music-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 25px rgba(27, 107, 58, 0.5);
-}
-.music-float svg {
-  width: 22px;
-  height: 22px;
-  transition: transform 0.3s;
-}
-.music-float.playing svg {
-  animation: musicSpin 3s linear infinite;
-}
-.music-float .music-tooltip {
-  position: absolute;
-  right: 60px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
-.music-float:hover .music-tooltip {
-  opacity: 1;
-}
-.music-bars {
-  display: flex;
-  align-items: flex-end;
-  gap: 2px;
-  height: 18px;
-}
-.music-bars span {
-  display: block;
-  width: 3px;
-  background: var(--white);
-  border-radius: 2px;
-  transition: height 0.2s;
-}
-.music-float:not(.playing) .music-bars span {
-  height: 4px !important;
-}
-.music-float.playing .music-bars span:nth-child(1) {
-  animation: musicBar1 0.8s ease-in-out infinite;
-}
-.music-float.playing .music-bars span:nth-child(2) {
-  animation: musicBar2 0.6s ease-in-out infinite 0.1s;
-}
-.music-float.playing .music-bars span:nth-child(3) {
-  animation: musicBar3 0.7s ease-in-out infinite 0.2s;
-}
-.music-float.playing .music-bars span:nth-child(4) {
-  animation: musicBar4 0.5s ease-in-out infinite 0.15s;
-}
+
 
 @keyframes musicBar1 {
   0%,
@@ -1948,12 +1858,7 @@ button {
   }
 
   /* Adjust floating elements for bottom nav */
-  .music-float {
-    bottom: 140px;
-    right: 16px;
-    width: 44px;
-    height: 44px;
-  }
+  
   .wa-float {
     bottom: 80px;
     right: 16px;

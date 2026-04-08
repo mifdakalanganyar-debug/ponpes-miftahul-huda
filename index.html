@@ -2003,20 +2003,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Background Audio -->
-    <audio id="bgMusic" loop preload="auto">
-      <source src="assets/audio/videolatar.mp3" type="audio/mpeg">
-    </audio>
-
-    <!-- Music Toggle Button -->
-    <button class="music-float" id="musicToggle" aria-label="Toggle Musik Latar" title="Putar / Pause Musik">
-      <div class="music-bars">
-        <span></span><span></span><span></span><span></span>
-      </div>
-      <div class="music-tooltip">🎵 Putar Sholawat</div>
-    </button>
-
     <!-- WhatsApp Float -->
     <a
       href="https://wa.me/6281332052559?text=Assalamu'alaikum%2C%20saya%20ingin%20bertanya%20tentang%20Pondok%20Pesantren%20Miftahul%20Huda"
@@ -2200,68 +2186,6 @@
       });
 
       // Gallery button now links to galeri.html directly
-
-      // ===== Background Music Player =====
-      (function() {
-        const bgMusic = document.getElementById('bgMusic');
-        const musicToggle = document.getElementById('musicToggle');
-        const tooltip = musicToggle ? musicToggle.querySelector('.music-tooltip') : null;
-        if (!bgMusic || !musicToggle) return;
-
-        bgMusic.volume = 0.5;
-        let hasAutoPlayed = false;
-
-        function updateUI(playing) {
-          if (playing) {
-            musicToggle.classList.add('playing');
-            if (tooltip) tooltip.textContent = '⏸ Pause Sholawat';
-          } else {
-            musicToggle.classList.remove('playing');
-            if (tooltip) tooltip.textContent = '🎵 Putar Sholawat';
-          }
-        }
-
-        function tryPlay() {
-          bgMusic.play().then(() => {
-            updateUI(true);
-            localStorage.setItem('bgMusicPlaying', 'true');
-          }).catch(() => updateUI(false));
-        }
-
-        // Auto-play on first user interaction (click/touch/scroll anywhere)
-        function autoPlayOnInteraction() {
-          if (hasAutoPlayed) return;
-          hasAutoPlayed = true;
-          // Remove all listeners after first trigger
-          ['click','touchstart','scroll','keydown'].forEach(evt => {
-            document.removeEventListener(evt, autoPlayOnInteraction, {capture:true});
-          });
-          // Only auto-play if user hasn't explicitly paused before
-          const wasPaused = localStorage.getItem('bgMusicPlaying') === 'false';
-          if (!wasPaused) {
-            tryPlay();
-          }
-        }
-
-        // Attach listeners for first interaction
-        ['click','touchstart','scroll','keydown'].forEach(evt => {
-          document.addEventListener(evt, autoPlayOnInteraction, {capture:true, passive:true});
-        });
-
-        // Toggle button click
-        musicToggle.addEventListener('click', function() {
-          hasAutoPlayed = true; // prevent double-play
-          if (bgMusic.paused) {
-            tryPlay();
-          } else {
-            bgMusic.pause();
-            updateUI(false);
-            localStorage.setItem('bgMusicPlaying', 'false');
-          }
-        });
-
-        bgMusic.addEventListener('ended', () => updateUI(false));
-      })();
     </script>
 
     <!-- Mobile Bottom Nav -->
