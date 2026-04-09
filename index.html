@@ -2188,6 +2188,65 @@
       // Gallery button now links to galeri.html directly
     </script>
 
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+    
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="mobile-drawer-handle"><span></span></div>
+      <div class="mobile-drawer-header">
+        <h3>Menu Navigasi</h3>
+        <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Tutup menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="mobile-drawer-body">
+        <div class="mobile-drawer-section">
+          <div class="mobile-drawer-section-title">Tentang Kami</div>
+          <div class="mobile-drawer-links">
+            <a href="profil.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>Profil Pesantren</a>
+            <a href="#about"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>Sejarah</a>
+            <a href="alumni.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>Alumni</a>
+          </div>
+        </div>
+        <div class="mobile-drawer-section">
+          <div class="mobile-drawer-section-title">Pendidikan</div>
+          <div class="mobile-drawer-links">
+            <a href="#programs"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>Program Unggulan</a>
+            <a href="program-tahfidz.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>Tahfidz Al-Quran</a>
+            <a href="program-bahasa-arab.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>Bahasa Arab</a>
+            <a href="program-bahasa-inggris.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>Bahasa Inggris</a>
+            <a href="smk-miftahul-huda.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>SMK Miftahul Huda</a>
+            <a href="#schedule"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Jadwal Kegiatan</a>
+          </div>
+        </div>
+        <div class="mobile-drawer-section">
+          <div class="mobile-drawer-section-title">Bacaan</div>
+          <div class="mobile-drawer-links">
+            <a href="sholawat.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>Sholawat & Surat</a>
+            <a href="yasin-tahlil.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>Yasin & Tahlil</a>
+          </div>
+        </div>
+        <div class="mobile-drawer-section">
+          <div class="mobile-drawer-section-title">Berita & Informasi</div>
+          <div class="mobile-drawer-links">
+            <a href="berita/index.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2"/></svg>Berita</a>
+            <a href="artikel/index.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>Artikel</a>
+            <a href="prestasi/index.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>Prestasi & Karya</a>
+            <a href="events/index.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Events</a>
+          </div>
+        </div>
+        <div class="mobile-drawer-section">
+          <div class="mobile-drawer-section-title">Lainnya</div>
+          <div class="mobile-drawer-links">
+            <a href="galeri.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>Galeri</a>
+            <a href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Kontak</a>
+          </div>
+        </div>
+        <a href="pendaftaran.html" class="mobile-drawer-cta">📝 Daftar Sekarang</a>
+      </div>
+    </div>
+
     <!-- Mobile Bottom Nav -->
     <nav class="mobile-bottom-nav" aria-label="Navigasi Mobile">
       <a href="#home" class="active"
@@ -2202,20 +2261,6 @@
           <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
           <polyline points="9 22 9 12 15 12 15 22" /></svg
         >Beranda</a
-      >
-      <a href="profil.html"
-        ><svg
-          width="22"
-          height="22"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <circle cx="12" cy="12" r="10" />
-          <path d="M12 16v-4" />
-          <path d="M12 8h.01" /></svg
-        >Profil</a
       >
       <a href="#programs"
         ><svg
@@ -2258,6 +2303,36 @@
           /></svg
         >Kontak</a
       >
+      <button id="mobileDrawerBtn" aria-label="Menu lainnya">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/>
+        </svg>
+        Lainnya
+      </button>
     </nav>
+
+    <script>
+    // Mobile Drawer
+    (function(){
+      const btn = document.getElementById('mobileDrawerBtn');
+      const overlay = document.getElementById('mobileDrawerOverlay');
+      const drawer = document.getElementById('mobileDrawer');
+      const closeBtn = document.getElementById('mobileDrawerClose');
+      function openDrawer(){
+        overlay.classList.add('open');
+        drawer.classList.add('open');
+        document.body.style.overflow='hidden';
+      }
+      function closeDrawer(){
+        overlay.classList.remove('open');
+        drawer.classList.remove('open');
+        document.body.style.overflow='';
+      }
+      if(btn) btn.addEventListener('click', openDrawer);
+      if(overlay) overlay.addEventListener('click', closeDrawer);
+      if(closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeDrawer); });
+    })();
+    </script>
   </body>
 </html>

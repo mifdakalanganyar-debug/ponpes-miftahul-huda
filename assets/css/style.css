@@ -1779,6 +1779,273 @@ button {
 .mobile-bottom-nav {
   display: none;
 }
+.mobile-bottom-nav button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.3rem 0.5rem;
+  transition: all var(--transition);
+  text-decoration: none;
+  min-width: 52px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.mobile-bottom-nav button svg {
+  width: 22px;
+  height: 22px;
+}
+.mobile-bottom-nav button.active,
+.mobile-bottom-nav button:hover {
+  color: var(--accent-light);
+}
+
+/* Mobile Drawer */
+.mobile-drawer-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.mobile-drawer-overlay.open {
+  opacity: 1;
+}
+.mobile-drawer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1101;
+  background: var(--white);
+  border-radius: 20px 20px 0 0;
+  max-height: 85vh;
+  overflow-y: auto;
+  transform: translateY(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.mobile-drawer.open {
+  transform: translateY(0);
+}
+.mobile-drawer-handle {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 8px;
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  z-index: 2;
+}
+.mobile-drawer-handle span {
+  width: 40px;
+  height: 4px;
+  background: var(--gray-light);
+  border-radius: 4px;
+}
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.25rem 1rem;
+  border-bottom: 1px solid var(--gray-light);
+}
+.mobile-drawer-header h3 {
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+.mobile-drawer-close {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--light-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  color: var(--gray);
+  transition: all var(--transition);
+}
+.mobile-drawer-close:hover {
+  background: var(--gray-light);
+  color: var(--dark);
+}
+.mobile-drawer-body {
+  padding: 1rem 1.25rem 2rem;
+}
+.mobile-drawer-section {
+  margin-bottom: 1.25rem;
+}
+.mobile-drawer-section-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.6rem;
+  padding-left: 0.25rem;
+}
+.mobile-drawer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.mobile-drawer-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--dark);
+  background: var(--light);
+  transition: all var(--transition);
+  text-decoration: none;
+}
+.mobile-drawer-links a:hover,
+.mobile-drawer-links a:active {
+  background: rgba(27, 107, 58, 0.08);
+  color: var(--primary);
+}
+.mobile-drawer-links a svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--primary);
+  opacity: 0.7;
+}
+.mobile-drawer-cta {
+  display: block;
+  text-align: center;
+  padding: 0.85rem;
+  background: var(--accent);
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: var(--radius-sm);
+  margin-top: 0.75rem;
+  transition: all var(--transition);
+}
+.mobile-drawer-cta:hover {
+  background: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+/* Sholawat close-bottom button */
+.sholawat-close-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background: var(--light-alt);
+  color: var(--primary);
+  border: 1.5px solid var(--gray-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: inherit;
+}
+.sholawat-close-bottom:hover {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+.sholawat-close-bottom svg {
+  transition: transform 0.3s;
+}
+
+/* Yasin-Tahlil Accordion (collapsible) */
+.yt-accordion {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  transition: all var(--transition);
+}
+.yt-accordion:hover {
+  box-shadow: var(--shadow-lg);
+}
+.yt-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  background: rgba(27, 107, 58, 0.03);
+  transition: background var(--transition);
+  user-select: none;
+}
+.yt-accordion-header:hover {
+  background: rgba(27, 107, 58, 0.06);
+}
+.yt-accordion-header h2 {
+  font-size: 1.15rem;
+  color: var(--primary);
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.yt-accordion-header .yt-toggle-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+  color: var(--gray);
+  flex-shrink: 0;
+}
+.yt-accordion.open .yt-toggle-icon {
+  transform: rotate(180deg);
+}
+.yt-accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.yt-accordion.open .yt-accordion-body {
+  max-height: 99999px;
+}
+.yt-accordion-inner {
+  padding: 1.5rem;
+  border-top: 1px solid var(--gray-light);
+}
+.yt-accordion-close-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  background: var(--light-alt);
+  color: var(--primary);
+  border: 1.5px solid var(--gray-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: inherit;
+}
+.yt-accordion-close-bottom:hover {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
 
 /* ========== RESPONSIVE 1024px ========== */
 @media (max-width: 1024px) {
@@ -1813,6 +2080,12 @@ button {
     display: none;
   }
 
+  /* Mobile Drawer visible */
+  .mobile-drawer-overlay,
+  .mobile-drawer {
+    display: block;
+  }
+
   /* Mobile Bottom Nav - App Style */
   .mobile-bottom-nav {
     display: flex;
@@ -1824,6 +2097,7 @@ button {
     background: var(--primary);
     box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.15);
     padding: 0.35rem 0 0.5rem;
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
     justify-content: space-around;
     align-items: center;
   }
@@ -1858,7 +2132,6 @@ button {
   }
 
   /* Adjust floating elements for bottom nav */
-  
   .wa-float {
     bottom: 80px;
     right: 16px;
@@ -1972,12 +2245,17 @@ button {
   .sholawat-grid {
     grid-template-columns: 1fr;
   }
-  .mobile-bottom-nav a {
+  .mobile-bottom-nav a,
+  .mobile-bottom-nav button {
     font-size: 0.6rem;
     min-width: 46px;
   }
-  .mobile-bottom-nav a svg {
+  .mobile-bottom-nav a svg,
+  .mobile-bottom-nav button svg {
     width: 20px;
     height: 20px;
+  }
+  .mobile-drawer-links {
+    grid-template-columns: 1fr;
   }
 }
