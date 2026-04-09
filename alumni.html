@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="id" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Alumni Berprestasi - PP Miftahul Huda Kalanganyar Lamongan</title>
+    <meta
+      name="description"
+      content="Alumni berprestasi Pondok Pesantren Miftahul Huda Kalanganyar yang berhasil melanjutkan ke universitas ternama. Kisah inspiratif alumni pesantren."
+    />
+    <meta
+      name="keywords"
+      content="alumni pesantren, miftahul huda, kalanganyar, universitas brawijaya, universitas malang, UPN surabaya, alumni berprestasi"
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      rel="canonical"
+      href="https://ponpes-miftahul-huda.vercel.app/alumni.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Alumni Berprestasi - PP Miftahul Huda Kalanganyar"
+    />
+    <meta
+      property="og:description"
+      content="Kisah inspiratif alumni pesantren yang berhasil melanjutkan ke universitas ternama."
+    />
+    <meta
+      property="og:url"
+      content="https://ponpes-miftahul-huda.vercel.app/alumni.html"
+    />
+    <meta
+      property="og:image"
+      content="https://ponpes-miftahul-huda.vercel.app/assets/images/background.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="assets/images/logo-pondok.webp" />
+    <meta name="theme-color" content="#1B6B3A" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .alumni-hero {
+        background: linear-gradient(
+          135deg,
+          var(--primary-dark),
+          var(--primary)
+        );
+        color: #fff;
+        padding: 8rem 0 4rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .alumni-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("assets/images/background.webp") center/cover;
+        opacity: 0.15;
+      }
+      .alumni-hero .container {
+        position: relative;
+        z-index: 2;
+      }
+      .alumni-hero h1 {
+        font-size: 2.4rem;
+        margin-bottom: 0.75rem;
+        font-weight: 800;
+      }
+      .alumni-hero p {
+        opacity: 0.8;
+        max-width: 650px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+      .alumni-hero .alumni-stats {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+      }
+      .alumni-hero .stat {
+        text-align: center;
+      }
+      .alumni-hero .stat .num {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--accent);
+        display: block;
+      }
+      .alumni-hero .stat .txt {
+        font-size: 0.85rem;
+        opacity: 0.7;
+      }
+
+      .alumni-intro {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem 1rem;
+      }
+      .alumni-intro p {
+        color: var(--gray);
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      .alumni-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .alumni-card {
+        background: var(--white);
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: all var(--transition);
+        position: relative;
+        border-top: 4px solid var(--primary);
+      }
+      .alumni-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-lg);
+        border-top-color: var(--accent);
+      }
+      .alumni-card-photo {
+        position: relative;
+        height: 320px;
+        overflow: hidden;
+        background: var(--light-alt);
+      }
+      .alumni-card-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        transition: transform 0.5s;
+      }
+      .alumni-card:hover .alumni-card-photo img {
+        transform: scale(1.05);
+      }
+      .alumni-card-photo .uni-badge {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        background: var(--accent);
+        color: var(--primary-dark);
+        padding: 0.5rem 1rem;
+        border-radius: var(--radius-sm);
+        font-size: 0.8rem;
+        font-weight: 700;
+        backdrop-filter: blur(10px);
+      }
+      .alumni-card-body {
+        padding: 1.75rem;
+      }
+      .alumni-card-body h3 {
+        font-size: 1.2rem;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+      }
+      .alumni-card-body .uni {
+        font-size: 0.88rem;
+        color: var(--accent-dark);
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+      .alumni-card-body .jurusan {
+        font-size: 0.82rem;
+        color: var(--gray);
+        margin-bottom: 0.5rem;
+      }
+      .alumni-card-body .lulus-info {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.78rem;
+        color: var(--white);
+        background: var(--green);
+        padding: 0.3rem 0.75rem;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+      }
+      .alumni-card-body .testimonial {
+        font-style: italic;
+        color: #555;
+        font-size: 0.88rem;
+        line-height: 1.7;
+        padding: 1rem;
+        background: var(--light-alt);
+        border-radius: var(--radius-sm);
+        border-left: 3px solid var(--accent);
+        margin-bottom: 1rem;
+        position: relative;
+      }
+      .alumni-card-body .testimonial::before {
+        content: '"';
+        font-size: 3rem;
+        color: var(--accent);
+        position: absolute;
+        top: -0.5rem;
+        left: 0.5rem;
+        font-family: var(--font-arabic);
+        opacity: 0.3;
+      }
+      .alumni-card-body .motivasi {
+        font-size: 0.85rem;
+        color: var(--primary);
+        padding: 0.75rem;
+        background: rgba(27, 107, 58, 0.05);
+        border-radius: var(--radius-sm);
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 0.75rem;
+      }
+      .alumni-card-body .motivasi strong {
+        display: block;
+        font-size: 0.78rem;
+        color: var(--accent-dark);
+        margin-bottom: 0.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .alumni-cta {
+        background: linear-gradient(
+          135deg,
+          var(--primary),
+          var(--primary-dark)
+        );
+        color: var(--white);
+        text-align: center;
+        padding: 4rem 1.5rem;
+        border-radius: var(--radius);
+        margin-top: 3rem;
+      }
+      .alumni-cta h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .alumni-cta p {
+        opacity: 0.8;
+        margin-bottom: 1.5rem;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.95rem;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--white);
+        opacity: 0.8;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+        transition: opacity 0.3s;
+      }
+      .back-link:hover {
+        opacity: 1;
+      }
+
+      @media (max-width: 768px) {
+        .alumni-hero {
+          padding: 6rem 0 3rem;
+        }
+        .alumni-hero h1 {
+          font-size: 1.6rem;
+        }
+        .alumni-grid {
+          grid-template-columns: 1fr;
+        }
+        .alumni-card-photo {
+          height: 280px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Langsung ke Konten</a>
+
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="Navigasi Utama">
+      <div class="container">
+        <a
+          href="index.html"
+          class="nav-brand"
+          aria-label="Beranda PP Miftahul Huda"
+        >
+          <img
+            src="assets/images/logo-pondok.webp"
+            alt="Logo PP Miftahul Huda"
+            width="45"
+            height="45"
+            loading="eager"
+          />
+          <div class="nav-brand-text">
+            <h1 style="font-size: 1rem">PP Miftahul Huda</h1>
+            <span>Kalanganyar - Lamongan</span>
+          </div>
+        </a>
+        <div class="nav-overlay" id="navOverlay"></div>
+        <div class="nav-menu" id="navMenu">
+          <a href="index.html">Beranda</a>
+          <a href="profil.html">Profil</a>
+          <a href="index.html#programs">Program</a>
+          <a href="sholawat.html">Sholawat & Surat</a>
+          <a href="alumni.html" class="active">Alumni</a>
+          <a href="index.html#gallery">Galeri</a>
+          <a href="index.html#contact">Kontak</a>
+          <a href="index.html#contact" class="nav-cta">Daftar</a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Buka menu navigasi"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="alumni-hero">
+      <div class="container">
+        <a href="index.html" class="back-link"
+          ><svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M19 12H5" />
+            <path d="M12 19l-7-7 7-7" />
+          </svg>
+          Kembali ke Beranda</a
+        >
+        <h1>Alumni Berprestasi Pesantren</h1>
+        <p>
+          Para alumni Pondok Pesantren Miftahul Huda Kalanganyar yang telah
+          berhasil melanjutkan pendidikan ke berbagai universitas ternama dan
+          menjadi kebanggaan pesantren
+        </p>
+        <div class="alumni-stats">
+          <div class="stat">
+            <span class="num">4</span
+            ><span class="txt">Alumni Universitas</span>
+          </div>
+          <div class="stat">
+            <span class="num">3+</span
+            ><span class="txt">Universitas Ternama</span>
+          </div>
+          <div class="stat">
+            <span class="num">38+</span
+            ><span class="txt">Tahun Mencetak Alumni</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+      <section class="section-padding">
+        <div class="container">
+          <div class="alumni-intro">
+            <div class="section-header center">
+              <span class="label">Kebanggaan Kami</span>
+              <h2>Jejak Langkah Alumni</h2>
+            </div>
+            <p>
+              Alumni Pondok Pesantren Miftahul Huda Kalanganyar telah
+              membuktikan bahwa pendidikan pesantren mampu mengantarkan santri
+              meraih cita-cita tertinggi. Berikut adalah kisah inspiratif para
+              alumni yang kini menempuh pendidikan di berbagai universitas
+              terkemuka di Indonesia.
+            </p>
+          </div>
+
+          <div class="alumni-grid">
+            <!-- Alumni 1: M. Ridho Al-Mahbub -->
+            <div class="alumni-card fade-up">
+              <div class="alumni-card-photo">
+                <img
+                  src="assets/images/alumni-ridho-almahbub.webp"
+                  alt="M. Ridho Al-Mahbub - Alumni PP Miftahul Huda, Mahasiswa Universitas Brawijaya"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                />
+                <div class="uni-badge">Universitas Brawijaya</div>
+              </div>
+              <div class="alumni-card-body">
+                <h3>M. Ridho Al-Mahbub</h3>
+                <div class="uni">Universitas Brawijaya, Malang</div>
+                <div class="jurusan">Jurusan Peternakan</div>
+                <div class="testimonial">
+                  "Pondok Pesantren Miftahul Huda adalah tempat yang membentuk
+                  karakter saya. Di sini saya belajar bukan hanya ilmu agama,
+                  tapi juga kedisiplinan, kemandirian, dan akhlak yang baik.
+                  Semua itu menjadi bekal berharga saya saat menempuh pendidikan
+                  di Universitas Brawijaya. Tanpa pondok, saya tidak akan
+                  menjadi seperti sekarang."
+                </div>
+                <div class="motivasi">
+                  <strong>Pesan untuk Santri</strong>
+                  "Jangan pernah meragukan proses di pesantren. Setiap
+                  pelajaran, setiap teguran, setiap kebiasaan yang ditanamkan
+                  akan menjadi senjata ampuh kalian menghadapi dunia luar. Tetap
+                  istiqomah dan percaya bahwa Allah sudah menyiapkan jalan
+                  terbaik."
+                </div>
+              </div>
+            </div>
+
+            <!-- Alumni 2: M. Maslukh Alfanani -->
+            <div class="alumni-card fade-up">
+              <div class="alumni-card-photo">
+                <img
+                  src="assets/images/alumni-maslukh-alfanani.webp"
+                  alt="M. Maslukh Alfanani - Alumni PP Miftahul Huda, Mahasiswa Universitas Negeri Malang"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                />
+                <div class="uni-badge">Universitas Negeri Malang</div>
+              </div>
+              <div class="alumni-card-body">
+                <h3>M. Maslukh Alfanani</h3>
+                <div class="uni">Universitas Negeri Malang (UM)</div>
+                <div class="jurusan">Jurusan Pendidikan Bahasa Inggris</div>
+                <div class="testimonial">
+                  "Pondok Miftahul Huda mengajarkan saya bahwa bahasa adalah
+                  jendela dunia. Program bahasa Inggris di pesantren menjadi
+                  fondasi kuat bagi saya untuk diterima di jurusan Pendidikan
+                  Bahasa Inggris UM. Lingkungan pesantren yang penuh semangat
+                  belajar membuat saya terbiasa berjuang tanpa mengeluh. Saya
+                  bangga menjadi alumni pondok ini."
+                </div>
+                <div class="motivasi">
+                  <strong>Pesan untuk Santri</strong>
+                  "Manfaatkan setiap kesempatan belajar di pondok dengan
+                  maksimal. Program bahasa yang ada di pesantren itu luar biasa
+                  nilainya. Jangan malu untuk terus berlatih, karena bahasa
+                  adalah kunci untuk membuka pintu dunia yang lebih luas."
+                </div>
+              </div>
+            </div>
+
+            <!-- Alumni 3: Khasby Assidiq -->
+            <div class="alumni-card fade-up">
+              <div class="alumni-card-photo">
+                <img
+                  src="assets/images/alumni-khasby-assidiq.webp"
+                  alt="Khasby Assidiq - Alumni PP Miftahul Huda, Mahasiswa UPN Veteran Surabaya"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                />
+                <div class="uni-badge">UPN Veteran Surabaya</div>
+              </div>
+              <div class="alumni-card-body">
+                <h3>Khasby Assidiq</h3>
+                <div class="uni">UPN Veteran Jawa Timur, Surabaya</div>
+                <div class="jurusan">Agro Bisnis</div>
+                <div class="testimonial">
+                  "Alhamdulillah, setelah lulus MA tahun 2023, saya langsung
+                  diterima di UPN Veteran Surabaya. Saya yakin ini berkat doa
+                  para guru dan pengasuh di Pondok Miftahul Huda. Disiplin waktu
+                  yang diajarkan di pesantren sangat membantu saya dalam
+                  menghadapi ujian masuk universitas. Pesantren bukan hanya
+                  tempat belajar agama, tapi sekolah kehidupan yang
+                  sesungguhnya."
+                </div>
+                <div class="motivasi">
+                  <strong>Pesan untuk Santri</strong>
+                  "Buktikan bahwa santri bisa bersaing di mana saja. Lulus dari
+                  pondok langsung diterima universitas bukan hal yang mustahil.
+                  Kuncinya adalah tawakal, usaha keras, dan jangan pernah lupa
+                  berdoa. Santri itu kuat, tangguh, dan penuh berkah!"
+                </div>
+              </div>
+            </div>
+
+            <!-- Alumni 4: Nadya Rosyada -->
+            <div class="alumni-card fade-up">
+              <div class="alumni-card-photo">
+                <img
+                  src="assets/images/alumni-rosa.webp"
+                  alt="Rosa - Alumni PP Miftahul Huda Kalanganyar"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                />
+                <div class="uni-badge">UIN Syarif Hidayatullah</div>
+              </div>
+              <div class="alumni-card-body">
+                <h3>Nadya Rosyada</h3>
+                <div class="uni">UIN Syarif Hidayatullah</div>
+                <div class="jurusan">Psikologi Islam</div>
+                <div class="testimonial">
+                  "Di Pondok Miftahul Huda, saya menemukan arti sejati dari
+                  kebersamaan dan perjuangan. Sebagai santriwati, saya ditempa
+                  dengan nilai-nilai Islam yang kuat, kedisiplinan, dan semangat
+                  belajar yang tinggi. Pengalaman di pesantren membentuk saya
+                  menjadi pribadi yang mandiri dan siap menghadapi tantangan di
+                  dunia perkuliahan. Pondok ini benar-benar rumah kedua bagi
+                  saya."
+                </div>
+                <div class="motivasi">
+                  <strong>Pesan untuk Santriwati</strong>
+                  "Kepada adik-adik santriwati, jangan pernah merasa bahwa
+                  kalian ketinggalan dari teman-teman di luar sana. Justru bekal
+                  yang kalian dapatkan di pesantren jauh lebih berharga — akhlak
+                  mulia, ilmu agama, dan mental yang kuat. Raih mimpi kalian
+                  setinggi langit, tapi jangan lupa untuk selalu rendah hati.
+                  Bi'idznillah, semua akan indah pada waktunya."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="alumni-cta fade-up">
+            <h3>Jadilah Alumni Berikutnya!</h3>
+            <p>
+              Bergabunglah dengan Pondok Pesantren Miftahul Huda Kalanganyar dan
+              raih masa depan gemilang dengan pondasi iman, ilmu, dan akhlak
+              mulia.
+            </p>
+            <a href="index.html#contact" class="btn btn-primary"
+              >Daftar Sekarang</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer mini -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="border: none; padding: 1.5rem 0">
+          <p>
+            &copy; 2026 Pondok Pesantren Miftahul Huda Kalanganyar. Semua Hak
+            Dilindungi.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Background Audio -->
+<audio id="bgMusic" loop preload="auto">
+<source src="assets/audio/videolatar.mp3" type="audio/mpeg">
+</audio>
+<button class="music-float" id="musicToggle" aria-label="Toggle Musik Latar" title="Putar / Pause Musik">
+<div class="music-bars"><span></span><span></span><span></span><span></span></div>
+<div class="music-tooltip">🎵 Putar Sholawat</div>
+</button>
+<!-- WhatsApp Float -->
+    <a
+      href="https://wa.me/6281332052559?text=Assalamu'alaikum%2C%20saya%20ingin%20bertanya%20tentang%20Pondok%20Pesantren%20Miftahul%20Huda"
+      class="wa-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="WhatsApp"
+    >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+        />
+        <path
+          d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.556-1.472A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"
+        />
+      </svg>
+      <span>Chat WhatsApp</span>
+    </a>
+    <button class="scroll-top" id="scrollTop" aria-label="Kembali ke atas">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+      >
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+
+    <script>
+      // Nav toggle
+      const navToggle = document.getElementById("navToggle"),
+        navMenu = document.getElementById("navMenu"),
+        navOverlay = document.getElementById("navOverlay");
+      function toggleNav() {
+        const o = navMenu.classList.toggle("open");
+        navOverlay.classList.toggle("open");
+        document.body.style.overflow = o ? "hidden" : "";
+      }
+      navToggle.addEventListener("click", toggleNav);
+      navOverlay.addEventListener("click", toggleNav);
+      document.querySelectorAll(".nav-menu a").forEach((a) =>
+        a.addEventListener("click", () => {
+          if (navMenu.classList.contains("open")) toggleNav();
+        }),
+      );
+
+      // Scroll top
+      const stb = document.getElementById("scrollTop");
+      window.addEventListener("scroll", () =>
+        stb.classList.toggle("visible", window.scrollY > 300),
+      );
+      stb.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" }),
+      );
+
+      // Fade-up animation
+      const fadeEls = document.querySelectorAll(".fade-up");
+      const fadeObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              fadeObs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+      );
+      fadeEls.forEach((el) => fadeObs.observe(el));
+    
+// ===== Background Music Player =====
+(function(){var a=document.getElementById("bgMusic"),b=document.getElementById("musicToggle");if(!a||!b)return;var t=b.querySelector(".music-tooltip");a.volume=0.3;function u(p){if(p){b.classList.add("playing");if(t)t.textContent="⏸ Pause Sholawat"}else{b.classList.remove("playing");if(t)t.textContent="🎵 Putar Sholawat"}}var w=localStorage.getItem("bgMusicPlaying")==="true";if(w){var pp=a.play();if(pp!==undefined)pp.then(function(){u(true)}).catch(function(){u(false)})}b.addEventListener("click",function(){if(a.paused){a.play().then(function(){u(true);localStorage.setItem("bgMusicPlaying","true")}).catch(function(){})}else{a.pause();u(false);localStorage.setItem("bgMusicPlaying","false")}});a.addEventListener("ended",function(){u(false)})})();
+</script>
+
+    <!-- Mobile Bottom Nav -->
+    <nav class="mobile-bottom-nav" aria-label="Navigasi Mobile">
+      <a href="index.html"
+        ><svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" /></svg
+        >Beranda</a
+      >
+      <a href="profil.html"
+        ><svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 16v-4" />
+          <path d="M12 8h.01" /></svg
+        >Profil</a
+      >
+      <a href="index.html#programs"
+        ><svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+          <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" /></svg
+        >Program</a
+      >
+      <a href="alumni.html" class="active"
+        ><svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M23 21v-2a4 4 0 00-3-3.87" />
+          <path d="M16 3.13a4 4 0 010 7.75" /></svg
+        >Alumni</a
+      >
+      <a href="index.html#contact"
+        ><svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+          /></svg
+        >Kontak</a
+      >
+    </nav>
+  </body>
+</html>
