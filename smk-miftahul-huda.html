@@ -92,7 +92,7 @@
 </nav>
 
 <!-- Hero -->
-<header style="background:linear-gradient(135deg,#0e2a1a 0%,#1b6b3a 60%,#2e8b57 100%);padding:6rem 0 4rem;color:#fff;margin-top:70px;position:relative;overflow:hidden">
+<header style="background:linear-gradient(135deg,#0e2a1a 0%,#1b6b3a 60%,#2e8b57 100%);padding:6rem 0 4rem;color:#fff;position:relative;overflow:hidden">
 <div style="position:absolute;inset:0;opacity:0.06;background:url('assets/images/gedung-pondok.webp') center/cover"></div>
 <div class="container" style="position:relative;z-index:1">
 <nav aria-label="Breadcrumb" style="margin-bottom:1.5rem">
@@ -120,7 +120,7 @@
 <section style="background:var(--primary);padding:2rem 0" aria-label="Statistik SMK">
 <div class="container">
 <div class="stats-grid">
-<div class="stat-item fade-up"><span class="number" style="color:var(--accent-light)">3</span><span class="label" style="color:rgba(255,255,255,0.8)">Jurusan Unggulan</span></div>
+<div class="stat-item fade-up"><span class="number" style="color:var(--accent-light)">2</span><span class="label" style="color:rgba(255,255,255,0.8)">Jurusan Unggulan</span></div>
 <div class="stat-item fade-up"><span class="number" style="color:var(--accent-light)">2026</span><span class="label" style="color:rgba(255,255,255,0.8)">Tahun Berdiri</span></div>
 <div class="stat-item fade-up"><span class="number" style="color:var(--accent-light)">95%</span><span class="label" style="color:rgba(255,255,255,0.8)">Tingkat Kelulusan</span></div>
 <div class="stat-item fade-up"><span class="number" style="color:var(--accent-light)">100%</span><span class="label" style="color:rgba(255,255,255,0.8)">Berbasis Pesantren</span></div>
@@ -163,7 +163,7 @@
 <span class="label">Arah Pendidikan</span>
 <h2>Visi & Misi SMK Miftahul Huda</h2>
 </div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:2rem">
 <div style="background:#fff;border-radius:12px;padding:2rem;box-shadow:var(--shadow);border-top:4px solid var(--primary)" class="fade-up">
 <div style="width:50px;height:50px;background:rgba(27,107,58,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
@@ -196,55 +196,38 @@
 <h2>Jurusan yang Tersedia</h2>
 <p>Pilih jurusan sesuai minat dan bakat kamu untuk masa depan yang cerah</p>
 </div>
-<div class="programs-grid" style="margin-top:2rem">
-<!-- Jurusan 1 -->
+<div class="programs-grid" style="margin-top:2rem;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<!-- Jurusan 1: Kuliner -->
 <div class="program-card fade-up">
 <div class="program-card-img">
-<img src="assets/images/kegiatan-bahasa-inggris.webp" alt="Jurusan Bisnis dan Manajemen SMK Miftahul Huda" width="400" height="250" loading="lazy">
+<img src="assets/images/kegiatan-bahasa-inggris.webp" alt="Jurusan Kuliner SMK Miftahul Huda" width="400" height="250" loading="lazy">
 <div class="overlay"></div>
 </div>
 <div class="program-card-body">
-<h3>Bisnis & Manajemen</h3>
-<p>Mempelajari ilmu bisnis, akuntansi, pemasaran digital, dan kewirausahaan berbasis syariah. Siap menjadi wirausahawan muda yang mandiri dan berakhlak.</p>
+<h3>Kuliner</h3>
+<p>Mempelajari seni memasak, tata boga, manajemen dapur, dan kewirausahaan kuliner. Siap menjadi chef profesional dan wirausahawan kuliner yang mandiri dan berakhlak mulia.</p>
 <div class="duration"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Durasi: 3 Tahun</div>
 <div style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.4rem">
-<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Akuntansi</span>
-<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Pemasaran Digital</span>
-<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Wirausaha Syariah</span>
+<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Tata Boga</span>
+<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Pastry & Bakery</span>
+<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Wirausaha Kuliner</span>
 </div>
 </div>
 </div>
-<!-- Jurusan 2 -->
+<!-- Jurusan 2: Agro Bisnis -->
 <div class="program-card fade-up">
 <div class="program-card-img">
-<img src="assets/images/santri-putra-belajar.webp" alt="Jurusan Teknologi Informasi SMK Miftahul Huda" width="400" height="250" loading="lazy">
+<img src="assets/images/santri-putra-belajar.webp" alt="Jurusan Agro Bisnis SMK Miftahul Huda" width="400" height="250" loading="lazy">
 <div class="overlay"></div>
 </div>
 <div class="program-card-body">
-<h3>Teknologi Informasi</h3>
-<p>Belajar pemrograman web, jaringan komputer, desain grafis, dan pengembangan aplikasi. Menjadi ahli IT yang berintegritas dan siap kerja di era digital.</p>
+<h3>Agro Bisnis</h3>
+<p>Mempelajari pertanian modern, agribisnis, budidaya tanaman, dan pengolahan hasil pertanian. Membekali siswa untuk menjadi pelaku agribisnis yang inovatif dan berdaya saing tinggi.</p>
 <div class="duration"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Durasi: 3 Tahun</div>
 <div style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.4rem">
-<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Web Development</span>
-<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Jaringan Komputer</span>
-<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Desain Grafis</span>
-</div>
-</div>
-</div>
-<!-- Jurusan 3 -->
-<div class="program-card fade-up">
-<div class="program-card-img">
-<img src="assets/images/santriwati-belajar.webp" alt="Jurusan Farmasi dan Kesehatan SMK Miftahul Huda" width="400" height="250" loading="lazy">
-<div class="overlay"></div>
-</div>
-<div class="program-card-body">
-<h3>Farmasi & Kesehatan</h3>
-<p>Program keahlian di bidang kesehatan dan kefarmasian. Menggabungkan ilmu kesehatan modern dengan pengobatan Islam untuk menjadi tenaga kesehatan yang amanah.</p>
-<div class="duration"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Durasi: 3 Tahun</div>
-<div style="margin-top:0.75rem;display:flex;flex-wrap:wrap;gap:0.4rem">
-<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Farmasi</span>
-<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Asisten Keperawatan</span>
-<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Kesehatan Islami</span>
+<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Budidaya Tanaman</span>
+<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Pengolahan Hasil</span>
+<span style="background:rgba(27,107,58,0.08);color:var(--primary);padding:0.2rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:600">Wirausaha Pertanian</span>
 </div>
 </div>
 </div>
@@ -278,8 +261,8 @@
 </div>
 <div class="why-card fade-up">
 <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-<h3>Beasiswa & Bantuan</h3>
-<p>Tersedia berbagai program beasiswa untuk siswa berprestasi dan kurang mampu, termasuk bantuan dari yayasan dan KIP Sekolah.</p>
+<h3>Beasiswa &amp; Bantuan</h3>
+<p>Beasiswa untuk <strong>20 pendaftar pertama</strong>, beasiswa <strong>full sekolah sampai kuliah bagi anak yatim</strong>, serta beasiswa bagi keluarga kurang mampu.</p>
 </div>
 </div>
 </div>
@@ -327,7 +310,7 @@
 </details>
 <details style="background:#fff;border-radius:12px;padding:1.5rem;box-shadow:var(--shadow);cursor:pointer" class="fade-up">
 <summary style="font-weight:700;color:var(--primary);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center">Apakah ada program beasiswa di SMK ini? <span>+</span></summary>
-<p style="margin-top:1rem;color:#444;line-height:1.7">Ya, tersedia beasiswa KIP (Kartu Indonesia Pintar) untuk siswa dari keluarga kurang mampu, serta beasiswa prestasi dari yayasan bagi siswa yang berprestasi secara akademik maupun hafalan Al-Quran.</p>
+<p style="margin-top:1rem;color:#444;line-height:1.7">Ya, tersedia beberapa program beasiswa:<br>• <strong>Beasiswa 20 Pendaftar Pertama</strong> — keringanan biaya untuk 20 siswa yang mendaftar paling awal.<br>• <strong>Beasiswa Anak Yatim</strong> — beasiswa FULL gratis sekolah hingga kuliah bagi anak yatim.<br>• <strong>Beasiswa Kurang Mampu</strong> — bantuan pendidikan bagi siswa dari keluarga kurang mampu.<br>Selain itu juga tersedia bantuan melalui KIP (Kartu Indonesia Pintar).</p>
 </details>
 <details style="background:#fff;border-radius:12px;padding:1.5rem;box-shadow:var(--shadow);cursor:pointer" class="fade-up">
 <summary style="font-weight:700;color:var(--primary);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center">Lulusan SMK ini bisa langsung kerja atau lanjut kuliah? <span>+</span></summary>
@@ -356,9 +339,8 @@
 <div class="footer-col">
 <h4>Program Keahlian</h4>
 <ul class="footer-links">
-<li><a href="smk-miftahul-huda.html#bisnis">Bisnis & Manajemen</a></li>
-<li><a href="smk-miftahul-huda.html#ti">Teknologi Informasi</a></li>
-<li><a href="smk-miftahul-huda.html#farmasi">Farmasi & Kesehatan</a></li>
+<li><a href="smk-miftahul-huda.html">Kuliner</a></li>
+<li><a href="smk-miftahul-huda.html">Agro Bisnis</a></li>
 <li><a href="events/index.html">Info PPDB</a></li>
 </ul>
 </div>
